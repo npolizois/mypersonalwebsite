@@ -37,11 +37,10 @@ jobs:
           git rm -rf .  # Clear the existing files (if any)
 
       - name: Build the project
-        run: npm run deploy
+        run: npm run build # Ensure this matches your build script in package.json
 
-      - name: Copy build files
-        run: |
-          cp -R dist/* .  # Copy the contents of the dist folder to the root
+      - name: Deploy the project
+        run: npm run deploy # This will execute your deploy script
 
       - name: Create CNAME file
         run: echo "nikospolyzois.dev" > CNAME
