@@ -26,16 +26,20 @@ jobs:
 
       - name: Set Git user
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "action@github.com"
+          git config --global user.name "Nikos Polyzois"
+          git config --global user.email "polyzois.nikos@gmail.com"
 
       - name: Deploy to GitHub Pages
         run: |
           npm install -g gh-pages
-          gh-pages -d dist
           echo "nikospolyzois.dev" > CNAME
           git add CNAME
           git commit -m "Update custom domain" || echo "No changes to commit"
+
+          # Set the remote URL with the GITHUB_TOKEN
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
+          # Push to gh-pages branch
           git push origin gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
