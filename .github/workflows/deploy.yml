@@ -21,8 +21,12 @@ jobs:
         with:
           node-version: "18" # Use the version you need
 
+      - name: Change directory
+        run: cd mypersonalwebsite # Change to the directory containing package.json
+
       - name: Install dependencies
         run: npm install
+        working-directory: mypersonalwebsite # Specify the working directory
 
       - name: Set Git user
         run: |
@@ -37,10 +41,12 @@ jobs:
           git rm -rf .  # Clear the existing files (if any)
 
       - name: Build the project
-        run: npm run build # Ensure this matches your build script in package.json
+        run: npm run build
+        working-directory: mypersonalwebsite # Specify the working directory
 
       - name: Deploy the project
-        run: npm run deploy # This will execute your deploy script
+        run: npm run deploy
+        working-directory: mypersonalwebsite # Specify the working directory
 
       - name: Create CNAME file
         run: echo "nikospolyzois.dev" > CNAME
