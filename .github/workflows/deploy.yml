@@ -21,19 +21,16 @@ jobs:
         with:
           node-version: "18" # Use the version you need
 
-      - name: List files for debugging
-        run: ls -R
-
       - name: Install dependencies
         run: npm install
+
+      - name: Build the project
+        run: npm run build
 
       - name: Set Git user
         run: |
           git config --global user.name "Nikos Polyzois"
           git config --global user.email "polyzois.nikos@gmail.com"
-
-      - name: Deploy the project
-        run: npm run deploy
 
       - name: Prepare gh-pages branch
         run: |
@@ -41,6 +38,10 @@ jobs:
           git stash || echo "No changes to stash"  # Stash any local changes if present
           git checkout -B gh-pages origin/gh-pages  # Create or update the local gh-pages branch
           git rm -rf .  # Clear the existing files (if any)
+
+      - name: Copy build files
+        run: |
+          cp -R dist/* .  # Copy the contents of the dist folder to the root
 
       - name: Create CNAME file
         run: echo "nikospolyzois.dev" > CNAME
