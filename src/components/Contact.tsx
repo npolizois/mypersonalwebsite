@@ -2,15 +2,47 @@ import React from "react";
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="py-20 bg-gray-900">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-8">Contact</h2>
-        <p className="text-lg text-center">
-          Reach out to me at{" "}
-          <a href="mailto:nikospolyzois@example.com" className="text-blue-500">
-            nikospolyzois@example.com
-          </a>
-        </p>
+    <section id="contact" className="py-16 bg-gray-50 text-center">
+      <h2 className="text-3xl font-bold mb-8">Contact</h2>
+      <div className="flex flex-col items-center justify-center space-y-6">
+        <div className="text-lg">
+          <p>
+            ✉️{" "}
+            <a
+              href="mailto:polyzois.nikos@gmail.com"
+              className="text-blue-500 hover:underline"
+            >
+              polyzois.nikos@gmail.com
+            </a>
+          </p>
+        </div>
+        <div className="text-lg">
+          <p>
+            📱{" "}
+            <a
+              href="tel:+306972024894"
+              className="text-blue-500 hover:underline"
+            >
+              +30 6972024894
+            </a>
+          </p>
+        </div>
+        <div className="text-lg">
+          <p>
+            💻 Skype: <span className="text-gray-700">nikos.polyzois</span>
+          </p>
+        </div>
+        <div className="text-lg">
+          <p>
+            LinkedIn:{" "}
+            <a
+              href="https://www.linkedin.com/in/nikos-polyzois/"
+              className="text-blue-500 hover:underline"
+            >
+              nikos-polyzois
+            </a>
+          </p>
+        </div>
       </div>
     </section>
   );
