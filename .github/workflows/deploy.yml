@@ -24,12 +24,11 @@ jobs:
       - name: List files for debugging
         run: ls -R
 
-      - name: Change directory
-        run: cd mypersonalwebsite # Change to the directory containing package.json
-
       - name: Install dependencies
         run: npm install
-        working-directory: mypersonalwebsite # Specify the working directory
+
+      - name: Deploy the project
+        run: npm run deploy
 
       - name: Set Git user
         run: |
@@ -42,14 +41,6 @@ jobs:
           git stash || echo "No changes to stash"  # Stash any local changes if present
           git checkout -B gh-pages origin/gh-pages  # Create or update the local gh-pages branch
           git rm -rf .  # Clear the existing files (if any)
-
-      - name: Build the project
-        run: npm run build
-        working-directory: mypersonalwebsite # Specify the working directory
-
-      - name: Deploy the project
-        run: npm run deploy
-        working-directory: mypersonalwebsite # Specify the working directory
 
       - name: Create CNAME file
         run: echo "nikospolyzois.dev" > CNAME
