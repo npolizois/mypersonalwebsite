@@ -35,6 +35,7 @@ jobs:
       - name: Prepare gh-pages branch
         run: |
           git fetch origin gh-pages  # Fetch the latest changes from gh-pages
+          git stash || echo "No changes to stash"  # Stash any local changes if present
           git checkout -B gh-pages origin/gh-pages  # Create or update the local gh-pages branch
           git rm -rf .  # Clear the existing files (if any)
 
