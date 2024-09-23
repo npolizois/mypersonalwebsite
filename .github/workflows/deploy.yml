@@ -27,13 +27,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Deploy the project
-        run: npm run deploy
-
       - name: Set Git user
         run: |
           git config --global user.name "Nikos Polyzois"
           git config --global user.email "polyzois.nikos@gmail.com"
+
+      - name: Deploy the project
+        run: npm run deploy
 
       - name: Prepare gh-pages branch
         run: |
