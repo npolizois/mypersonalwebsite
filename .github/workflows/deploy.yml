@@ -32,15 +32,15 @@ jobs:
           git config --global user.name "Nikos Polyzois"
           git config --global user.email "polyzois.nikos@gmail.com"
 
-      - name: Deploy the project
-        run: npm run deploy
-
       - name: Prepare gh-pages branch
         run: |
           git fetch origin gh-pages  # Fetch the latest changes from gh-pages
           git stash || echo "No changes to stash"  # Stash any local changes if present
           git checkout -B gh-pages origin/gh-pages  # Create or update the local gh-pages branch
           git rm -rf .  # Clear the existing files (if any)
+
+      - name: Deploy the project
+        run: npm run deploy
 
       - name: Create CNAME file
         run: echo "nikospolyzois.dev" > CNAME
