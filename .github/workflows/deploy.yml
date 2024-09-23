@@ -26,8 +26,8 @@ jobs:
 
       - name: Set Git user
         run: |
-          git config --global user.name "Nikos Polyzois"
-          git config --global user.email "polyzois.nikos@gmail.com"
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "action@github.com"
 
       - name: Deploy to GitHub Pages
         run: |
