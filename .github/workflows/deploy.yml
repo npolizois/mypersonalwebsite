@@ -29,17 +29,28 @@ jobs:
           git config --global user.name "Nikos Polyzois"
           git config --global user.email "polyzois.nikos@gmail.com"
 
-      - name: Deploy to GitHub Pages
+      - name: Prepare gh-pages branch
         run: |
-          npm install -g gh-pages
-          echo "nikospolyzois.dev" > CNAME
-          git add CNAME
-          git commit -m "Update custom domain" || echo "No changes to commit"
+          git checkout -b gh-pages || git checkout gh-pages
+          git rm -rf .  # Clear the existing files (if any)
 
-          # Set the remote URL with the GITHUB_TOKEN
+      - name: Copy build files
+        run: |
+          cp -R dist/* .  # Copy the contents of the dist folder to the root
+
+      - name: Create CNAME file
+        run: echo "nikospolyzois.dev" > CNAME
+
+      - name: Add and commit changes
+        run: |
+          git add .
+          git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
+
+      - name: Set the remote URL with the GITHUB_TOKEN
+        run: |
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
-          # Push to gh-pages branch
-          git push origin gh-pages
+      - name: Push to gh-pages branch
+        run: git push origin gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
