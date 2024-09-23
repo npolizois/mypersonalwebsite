@@ -34,7 +34,8 @@ jobs:
 
       - name: Prepare gh-pages branch
         run: |
-          git checkout -b gh-pages || git checkout gh-pages
+          git fetch origin gh-pages  # Fetch the latest changes from gh-pages
+          git checkout -B gh-pages origin/gh-pages  # Create or update the local gh-pages branch
           git rm -rf .  # Clear the existing files (if any)
 
       - name: Copy build files
