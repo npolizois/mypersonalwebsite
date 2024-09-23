@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
       <div className="text-center">
         <h1 className="text-5xl font-bold">Nikos Polyzois</h1>
         <p className="text-xl mt-4">
-          Full Stack Developer | React, Node.js & AWS
+          Full Stack Developer
         </p>
         <a
           href="#contact"
