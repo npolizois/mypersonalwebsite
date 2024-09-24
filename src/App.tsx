@@ -8,13 +8,15 @@ import Contact from "./components/Contact";
 
 const App: React.FC = () => {
   return (
-    <div className="bg-gray-900 text-white">
+    <div className="bg-gray-900 text-white min-h-screen">
       <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Skills />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Skills />
+        <Contact />
+      </main>
     </div>
   );
 };
