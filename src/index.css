@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom global styles */
+html {
+  scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+body {
+  @apply bg-dark text-light font-sans; /* Set background and text color, and apply the default font */
+}
+
+/* Custom styles for links */
+a {
+  @apply text-secondary transition duration-200; /* Use secondary color for links and add a transition */
+}
+
+a:hover {
+  @apply text-light; /* Change link color on hover */
+}
+
+/* Custom styles for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold; /* Make all headings bold */
+}
+
+h1 {
+  @apply text-5xl; /* Customize h1 size */
+}
+
+h2 {
+  @apply text-4xl; /* Customize h2 size */
+}
+
+h3 {
+  @apply text-3xl; /* Customize h3 size */
+}
+
+/* Add any additional custom styles as needed */

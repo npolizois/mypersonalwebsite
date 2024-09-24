@@ -2,22 +2,22 @@ import React from "react";
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-12">
+    <section id="experience" className="py-12 bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-8">
+        <h2 className="text-4xl font-bold text-center text-white mb-8">
           Professional Experience
         </h2>
 
         {/* PlayerDex */}
-        <div className="mb-8">
-          <h3 className="text-2xl font-semibold">
+        <div className="max-w-4xl mx-auto text-gray-300 mb-8">
+          <h3 className="text-2xl font-semibold text-white">
             Senior Full Stack Web Application Developer (Lead Dev)
           </h3>
-          <p className="text-gray-600">PlayerDex · Full-time</p>
-          <p className="text-gray-600">
+          <p className="text-gray-400">PlayerDex · Full-time</p>
+          <p className="text-gray-400">
             Dec 2023 - Present · Filothei-Psychiko, Attiki, Greece · Remote
           </p>
-          <ul className="list-disc list-inside mt-2 text-gray-800">
+          <ul className="list-disc list-inside mt-2 text-gray-300">
             <li>
               Lead development and maintenance of client-side and server-side
               applications in a start-up environment.
@@ -39,15 +39,15 @@ const Experience: React.FC = () => {
         </div>
 
         {/* VASS IT Greece */}
-        <div className="mb-8">
-          <h3 className="text-2xl font-semibold">
+        <div className="max-w-4xl mx-auto text-gray-300 mb-8">
+          <h3 className="text-2xl font-semibold text-white">
             Web Application Developer (SAD - TeCo)
           </h3>
-          <p className="text-gray-600">VASS IT GREECE · Full-time</p>
-          <p className="text-gray-600">
+          <p className="text-gray-400">VASS IT GREECE · Full-time</p>
+          <p className="text-gray-400">
             Aug 2021 - Dec 2023 · Gerakas, Attiki, Greece · Remote
           </p>
-          <ul className="list-disc list-inside mt-2 text-gray-800">
+          <ul className="list-disc list-inside mt-2 text-gray-300">
             <li>
               Developed projects for the European Commission, CPVO, and OPAP.
             </li>
@@ -65,15 +65,17 @@ const Experience: React.FC = () => {
         </div>
 
         {/* Ecodress */}
-        <div className="mb-8">
-          <h3 className="text-2xl font-semibold">Full Stack Web Developer</h3>
-          <p className="text-gray-600">
+        <div className="max-w-4xl mx-auto text-gray-300 mb-8">
+          <h3 className="text-2xl font-semibold text-white">
+            Full Stack Web Developer
+          </h3>
+          <p className="text-gray-400">
             Ecodress Branded Clothes By Kilo · Full-time
           </p>
-          <p className="text-gray-600">
+          <p className="text-gray-400">
             Sep 2017 - Aug 2021 · Metamorfosi, Attiki, Greece · Hybrid
           </p>
-          <ul className="list-disc list-inside mt-2 text-gray-800">
+          <ul className="list-disc list-inside mt-2 text-gray-300">
             <li>
               Built a custom ERP system from scratch with TDD coding standards.
             </li>
@@ -92,37 +94,18 @@ const Experience: React.FC = () => {
           </ul>
         </div>
 
-        {/* Additional Experience */}
-        <div className="mb-8">
-          <h3 className="text-2xl font-semibold">Additional Experience</h3>
-          <ul className="list-disc list-inside mt-2 text-gray-800">
-            <li>
-              <strong>E-commerce Administrator</strong> | Ecodress Branded
-              Clothes By Kilo · Nov 2014 - Sep 2017
-            </li>
-            <li>
-              <strong>Application Developer / Designer</strong> | Dual Logicom ·
-              Jan 2014 - Nov 2014
-            </li>
-            <li>
-              <strong>IT & Network Specialist</strong> | Voi & Noi · Nov 2012 -
-              Jan 2013
-            </li>
-            <li>
-              <strong>
-                IT & Network Specialist - Web Designer & Developer
-              </strong>{" "}
-              | PC ENTER · Apr 2012 - Sep 2012
-            </li>
-            <li>
-              <strong>IT Specialist</strong> | STARK Services S.A. · Jun 2009 -
-              Aug 2011
-            </li>
-            <li>
-              <strong>PC Support - IT Helpdesk (Internship)</strong> | Intrakat
-              S.A. · Jan 2007 - Jul 2007
-            </li>
-          </ul>
+        {/* Resume Link */}
+        <div className="max-w-4xl mx-auto text-gray-300">
+          <div className="mt-4">
+            <a
+              href="/assets/resume.pdf"
+              className="text-secondary hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Full Résumé
+            </a>
+          </div>
         </div>
       </div>
     </section>
