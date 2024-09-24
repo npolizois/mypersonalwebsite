@@ -2,13 +2,12 @@ import React from "react";
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-12 bg-gray-900">
+    <div className="pt-32 py-12 bg-gray-900 min-h-screen">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-white mb-8">
           Professional Experience
         </h2>
 
-        {/* PlayerDex */}
         <div className="max-w-4xl mx-auto text-gray-300 mb-8">
           <h3 className="text-2xl font-semibold text-white">
             Senior Full Stack Web Application Developer (Lead Dev)
@@ -38,7 +37,6 @@ const Experience: React.FC = () => {
           </ul>
         </div>
 
-        {/* VASS IT Greece */}
         <div className="max-w-4xl mx-auto text-gray-300 mb-8">
           <h3 className="text-2xl font-semibold text-white">
             Web Application Developer (SAD - TeCo)
@@ -64,7 +62,6 @@ const Experience: React.FC = () => {
           </ul>
         </div>
 
-        {/* Ecodress */}
         <div className="max-w-4xl mx-auto text-gray-300 mb-8">
           <h3 className="text-2xl font-semibold text-white">
             Full Stack Web Developer
@@ -94,7 +91,6 @@ const Experience: React.FC = () => {
           </ul>
         </div>
 
-        {/* Resume Link */}
         <div className="max-w-4xl mx-auto text-gray-300">
           <div className="mt-4">
             <a
@@ -108,7 +104,7 @@ const Experience: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
