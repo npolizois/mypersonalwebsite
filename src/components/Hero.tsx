@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <section className="flex flex-col items-center justify-center h-screen bg-[url('/path-to-your-background-image.jpg')] bg-cover bg-center">
+    <section className="flex flex-col items-center justify-center h-screen bg-cover bg-center">
       <h1 className="text-4xl sm:text-6xl font-extrabold text-white drop-shadow-lg">
         Senior Full Stack Web Developer
       </h1>
