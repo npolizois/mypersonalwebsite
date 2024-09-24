@@ -99,7 +99,7 @@ const Experience: React.FC = () => {
           <div className="mt-4">
             <a
               href="/assets/resume.pdf"
-              className="text-secondary hover:underline"
+              className="text-secondary hover:text-green-500"
               target="_blank"
               rel="noopener noreferrer"
             >
