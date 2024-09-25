@@ -30,8 +30,8 @@ const About: React.FC = () => {
               System for e-shops
             </li>
             <li>
-              Following <strong>TDD</strong> coding standards and version
-              control best practices
+              Following <strong>TDD</strong> coding standards and{" "}
+              <strong>version control</strong> best practices
             </li>
           </ul>
           <p className="text-base md:text-lg mt-8">
