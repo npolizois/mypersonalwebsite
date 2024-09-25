@@ -68,7 +68,7 @@ const About: React.FC = () => {
         <div className="max-w-full md:max-w-4xl mx-auto text-gray-300">
           <div className="mt-4">
             <a
-              href="/experience"
+              href="/#/experience"
               className="text-secondary hover:text-green-500 text-lg md:text-xl"
               target="_blank"
               rel="noopener noreferrer"
