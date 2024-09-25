@@ -48,6 +48,7 @@ const Skills: React.FC = () => {
             <li>Agile Methodologies (Scrum, Kanban)</li>
             <li>Atlassian Tools (JIRA, Confluence)</li>
             <li>VS Code & IntelliJ (IDE)</li>
+            <li>AI Tools</li>
           </ul>
         </div>
 
@@ -61,6 +62,7 @@ const Skills: React.FC = () => {
             <li>Detail-oriented</li>
             <li>Critical Thinking</li>
             <li>Time Management</li>
+            <li>Communication Skills</li>
           </ul>
         </div>
       </div>

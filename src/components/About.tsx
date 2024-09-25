@@ -35,6 +35,12 @@ const About: React.FC = () => {
               roles as a team leader in start-up and corporate settings
             </li>
           </ul>
+          <p className="text-base mt-8">
+            In my work, I utilize advanced <strong>AI Tools</strong> to enhance my productivity
+            and streamline my development process. These tools assist me in
+            problem-solving and refining my ideas, helping me deliver
+            high-quality results more efficiently.
+          </p>
         </div>
 
         <div className="max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8">
