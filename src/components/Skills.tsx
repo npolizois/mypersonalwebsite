@@ -9,7 +9,7 @@ const Skills: React.FC = () => {
         </h2>
 
         <div className="max-w-4xl mx-auto mb-12">
-          <h3 className="text-3xl font-semibold text-white mb-6">
+          <h3 className="text-xl md:text-2xl font-semibold text-white mb-6">
             🛠️ Development
           </h3>
           <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
@@ -29,7 +29,7 @@ const Skills: React.FC = () => {
         </div>
 
         <div className="max-w-4xl mx-auto mb-12">
-          <h3 className="text-3xl font-semibold text-white mb-6">
+          <h3 className="text-xl md:text-2xl font-semibold text-white mb-6">
             🛠️ DevOps & Cloud
           </h3>
           <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
@@ -41,7 +41,7 @@ const Skills: React.FC = () => {
         </div>
 
         <div className="max-w-4xl mx-auto mb-12">
-          <h3 className="text-3xl font-semibold text-white mb-6">
+          <h3 className="text-xl md:text-2xl font-semibold text-white mb-6">
             🛠️ Methodologies & Tools
           </h3>
           <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
@@ -53,7 +53,7 @@ const Skills: React.FC = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <h3 className="text-3xl font-semibold text-white mb-6">
+          <h3 className="text-xl md:text-2xl font-semibold text-white mb-6">
             🛠️ Soft Skills
           </h3>
           <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
