@@ -13,7 +13,7 @@ const Skills: React.FC = () => {
             🛠️ Development
           </h3>
           <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
-            <li>React.js (with TypeScript & Ionic React)</li>
+            <li>React.js (TypeScript / Ionic / Material)</li>
             <li>Node.js & Express.js</li>
             <li>GraphQL & REST APIs</li>
             <li>MongoDB & Mongoose</li>
@@ -47,7 +47,7 @@ const Skills: React.FC = () => {
           <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
             <li>Agile Methodologies (Scrum, Kanban)</li>
             <li>Atlassian Tools (JIRA, Confluence)</li>
-            <li>VS Code & IntelliJ (IDE)</li>
+            <li>Integrated Development Environments (VS Code, IntelliJ)</li>
             <li>AI Tools</li>
           </ul>
         </div>
