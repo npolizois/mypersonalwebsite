@@ -14,32 +14,54 @@ const About: React.FC = () => {
             years of industry experience, specializing in:
           </h4>
           <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
-            <li>Web Apps development for both the public and private sector</li>
-            <li>Custom-made ERP systems using OOP methodology</li>
-            <li>CMS-driven websites (MVC-L architecture)</li>
-            <li>Affiliation & Dropshipping Systems for e-shops</li>
             <li>
-              Following TDD coding standards and version control best practices
+              <strong>Web Apps</strong> development for both the public and
+              private sector
+            </li>
+            <li>
+              Custom-made <strong>ERP</strong> systems using{" "}
+              <strong>OOP</strong> methodology
+            </li>
+            <li>
+              CMS-driven websites (<strong>MVC-L</strong> architecture)
+            </li>
+            <li>
+              <strong>Affiliation</strong> & <strong>Dropshipping</strong>{" "}
+              System for e-shops
+            </li>
+            <li>
+              Following <strong>TDD</strong> coding standards and version
+              control best practices
             </li>
           </ul>
           <p className="text-base md:text-lg mt-8">
             I offer a wide range of services, including:
           </p>
           <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
-            <li>Custom theme and plugin development</li>
-            <li>API interfaces (REST & GraphQL)</li>
-            <li>Database administration and engineering</li>
-            <li>DevOps responsibilities</li>
+            <li>
+              <strong>Custom theme</strong> and <strong>plugin</strong>{" "}
+              development
+            </li>
+            <li>
+              <strong>API</strong> interfaces (<strong>REST</strong> &{" "}
+              <strong>GraphQL</strong>)
+            </li>
+            <li>
+              <strong>Database</strong> administration and engineering
+            </li>
+            <li>
+              <strong>DevOps</strong> responsibilities
+            </li>
             <li>
               Experience in both large and small team environments, including
               roles as a team leader in start-up and corporate settings
             </li>
           </ul>
           <p className="text-base mt-8">
-            In my work, I utilize advanced <strong>AI Tools</strong> to enhance my productivity
-            and streamline my development process. These tools assist me in
-            problem-solving and refining my ideas, helping me deliver
-            high-quality results more efficiently.
+            In my work, I utilize advanced <strong>AI Tools</strong> to enhance
+            my productivity and streamline my development process. These tools
+            assist me in problem-solving and refining my ideas, helping me
+            deliver high-quality results more efficiently.
           </p>
         </div>
 
@@ -50,9 +72,13 @@ const About: React.FC = () => {
           </h4>
 
           <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
-            <li>Site building & management (CMS)</li>
+            <li>
+              Site building & management <strong>(CMS)</strong>
+            </li>
             <li>Database administration</li>
-            <li>SEO and digital marketing strategies</li>
+            <li>
+              <strong>SEO</strong> and digital marketing strategies
+            </li>
           </ul>
         </div>
 
@@ -62,12 +88,17 @@ const About: React.FC = () => {
             2nd level) with 4 years of successful experience in:
           </h4>
           <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
-            <li>Hardware and software maintenance</li>
+            <li>
+              <strong>Hardware</strong> and <strong>software</strong>{" "}
+              maintenance
+            </li>
             <li>
               Providing timely and positive responses to IT-related assistance
             </li>
             <li>Adhering to organizational confidentiality policies</li>
-            <li>Working for large multinational companies</li>
+            <li>
+              Working for large <strong>multinational</strong> companies
+            </li>
           </ul>
         </div>
 
