@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center cursor-pointer">
           <Link to="/" className="flex items-center no-underline">
             <img
-              src="/assets/np.png"
+              src="/assets/np.webp"
               alt="Nikos Polyzois"
               className="w-10 h-10 rounded-full mr-2"
             />
