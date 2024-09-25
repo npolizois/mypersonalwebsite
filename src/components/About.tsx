@@ -10,8 +10,8 @@ const About: React.FC = () => {
 
         <div className="max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8">
           <h4 className="text-xl md:text-2xl font-semibold text-white">
-            💡 I am a <strong>Full Stack Web Developer</strong> (front end
-            focused) with over 7 years of industry experience, specializing in:
+            💡 I am a <strong>Full Stack Web Developer</strong> with over 7
+            years of industry experience, specializing in:
           </h4>
           <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
             <li>Web Apps development for both the public and private sector</li>
@@ -63,6 +63,19 @@ const About: React.FC = () => {
             <li>Adhering to organizational confidentiality policies</li>
             <li>Working for large multinational companies</li>
           </ul>
+        </div>
+
+        <div className="max-w-full md:max-w-4xl mx-auto text-gray-300">
+          <div className="mt-4">
+            <a
+              href="/experience"
+              className="text-secondary hover:text-green-500 text-lg md:text-xl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Check Out My Experience
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -40,7 +40,7 @@ const Skills: React.FC = () => {
           </ul>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto mb-12">
           <h3 className="text-3xl font-semibold text-white mb-6">
             🛠️ Methodologies & Tools
           </h3>
@@ -48,9 +48,19 @@ const Skills: React.FC = () => {
             <li>Agile Methodologies (Scrum, Kanban)</li>
             <li>Atlassian Tools (JIRA, Confluence)</li>
             <li>VS Code & IntelliJ (IDE)</li>
-            <li>SQL (MySQL, Oracle) Development</li>
-            <li>Waterfall Methodology</li>
-            <li>Version Control with Git & SVN</li>
+          </ul>
+        </div>
+
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-3xl font-semibold text-white mb-6">
+            🛠️ Soft Skills
+          </h3>
+          <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
+            <li>Analytical Thinking</li>
+            <li>Organization skills</li>
+            <li>Detail-oriented</li>
+            <li>Critical Thinking</li>
+            <li>Time Management</li>
           </ul>
         </div>
       </div>
