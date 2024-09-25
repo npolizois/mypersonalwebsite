@@ -6,6 +6,11 @@ body {
   @apply bg-dark text-light font-sans; /* Set background and text color, and apply the default font */
 }
 
+/* Disable text selection */
+body {
+  @apply select-none;
+}
+
 /* Custom styles for links */
 a {
   @apply text-secondary transition duration-200; /* Use secondary color for links and add a transition */

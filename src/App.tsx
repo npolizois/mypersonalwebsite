@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom"; // Use HashRouter
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -10,6 +10,19 @@ import NotFound from "./components/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
 const App: React.FC = () => {
+  useEffect(() => {
+    const handleCopy = (e: ClipboardEvent) => {
+      e.preventDefault(); // Prevent the default copy action
+    };
+
+    document.addEventListener("copy", handleCopy);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      document.removeEventListener("copy", handleCopy);
+    };
+  }, []);
+
   return (
     <Router>
       <ScrollToTop />
