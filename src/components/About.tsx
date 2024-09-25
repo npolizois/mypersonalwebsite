@@ -70,8 +70,6 @@ const About: React.FC = () => {
             <a
               href="/#/experience"
               className="text-secondary hover:text-green-500 text-lg md:text-xl"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               Check Out My Experience
             </a>

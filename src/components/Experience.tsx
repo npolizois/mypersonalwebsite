@@ -109,8 +109,6 @@ const Experience: React.FC = () => {
             <a
               href="/#/skills"
               className="text-secondary hover:text-green-500 text-lg md:text-xl"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               View My Skills
             </a>
