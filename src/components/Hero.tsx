@@ -1,14 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-cover bg-center">
-      <h1 className="text-4xl sm:text-6xl font-extrabold text-white drop-shadow-lg">
+    <div className="flex flex-col items-center justify-center h-screen bg-cover bg-center container mx-auto px-4 sm:px-2 md:px-4">
+      <h1 className="text-4xl sm:text-6xl font-extrabold text-white drop-shadow-lg text-center">
         Senior Full Stack Web Developer
       </h1>
-      <h2 className="text-2xl sm:text-4xl mt-4 text-gray-300">
-        Building Tomorrow’s Solutions with Expertise and Passion.
+      <h2 className="text-2xl sm:text-4xl mt-4 text-gray-300 text-center">
+        Delivering Scalable and High-Performance Web Applications
       </h2>
+      <p className="mt-6 text-lg sm:text-xl text-gray-400 text-center max-w-2xl">
+        With over 7 years of experience in full-stack development, I specialize
+        in creating efficient and innovative solutions. I transform ideas into
+        reality by leveraging the latest technologies to enhance user
+        experiences, ensuring robust functionality and seamless interactions
+        across applications.
+      </p>
+      <Link
+        to="/about"
+        className="mt-8 px-6 sm:px-8 py-2 sm:py-3 bg-green-500 text-white text-lg rounded-lg hover:bg-green-600 transition duration-300"
+      >
+        Learn More About Me
+      </Link>
     </div>
   );
 };

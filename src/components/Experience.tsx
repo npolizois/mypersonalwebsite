@@ -2,21 +2,21 @@ import React from "react";
 
 const Experience: React.FC = () => {
   return (
-    <div className="pt-32 py-12 bg-gray-900 min-h-screen">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-white mb-8">
+    <div className="pt-16 md:pt-32 py-6 md:py-12 bg-gray-900 min-h-screen">
+      <div className="container mx-auto px-4 sm:px-2 md:px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
           Professional Experience
         </h2>
 
-        <div className="max-w-4xl mx-auto text-gray-300 mb-8">
-          <h3 className="text-2xl font-semibold text-white">
-            Senior Full Stack Web Application Developer (Lead Dev)
+        <div className="max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8">
+          <h3 className="text-xl md:text-2xl font-semibold text-white">
+            💼 Senior Full Stack Web Application Developer (Lead Dev)
           </h3>
           <p className="text-gray-400">PlayerDex · Full-time</p>
           <p className="text-gray-400">
             Dec 2023 - Present · Filothei-Psychiko, Attiki, Greece · Remote
           </p>
-          <ul className="list-disc list-inside mt-2 text-gray-300">
+          <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
             <li>
               Lead development and maintenance of client-side and server-side
               applications in a start-up environment.
@@ -37,15 +37,15 @@ const Experience: React.FC = () => {
           </ul>
         </div>
 
-        <div className="max-w-4xl mx-auto text-gray-300 mb-8">
-          <h3 className="text-2xl font-semibold text-white">
-            Web Application Developer (SAD - TeCo)
+        <div className="max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8">
+          <h3 className="text-xl md:text-2xl font-semibold text-white">
+            💼 Web Application Developer (SAD - TeCo)
           </h3>
           <p className="text-gray-400">VASS IT GREECE · Full-time</p>
           <p className="text-gray-400">
             Aug 2021 - Dec 2023 · Gerakas, Attiki, Greece · Remote
           </p>
-          <ul className="list-disc list-inside mt-2 text-gray-300">
+          <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
             <li>
               Developed projects for the European Commission, CPVO, and OPAP.
             </li>
@@ -62,9 +62,9 @@ const Experience: React.FC = () => {
           </ul>
         </div>
 
-        <div className="max-w-4xl mx-auto text-gray-300 mb-8">
-          <h3 className="text-2xl font-semibold text-white">
-            Full Stack Web Developer
+        <div className="max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8">
+          <h3 className="text-xl md:text-2xl font-semibold text-white">
+            💼 Full Stack Web Developer
           </h3>
           <p className="text-gray-400">
             Ecodress Branded Clothes By Kilo · Full-time
@@ -72,7 +72,7 @@ const Experience: React.FC = () => {
           <p className="text-gray-400">
             Sep 2017 - Aug 2021 · Metamorfosi, Attiki, Greece · Hybrid
           </p>
-          <ul className="list-disc list-inside mt-2 text-gray-300">
+          <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
             <li>
               Built a custom ERP system from scratch with TDD coding standards.
             </li>
@@ -91,11 +91,11 @@ const Experience: React.FC = () => {
           </ul>
         </div>
 
-        <div className="max-w-4xl mx-auto text-gray-300">
+        <div className="max-w-full md:max-w-4xl mx-auto text-gray-300">
           <div className="mt-4">
             <a
               href="/assets/resume.pdf"
-              className="text-secondary hover:text-green-500"
+              className="text-secondary hover:text-green-500 text-lg md:text-xl"
               target="_blank"
               rel="noopener noreferrer"
             >

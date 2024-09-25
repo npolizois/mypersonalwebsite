@@ -4,15 +4,15 @@ const Skills: React.FC = () => {
   return (
     <div className="pt-32 py-12 bg-gray-900 min-h-screen">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-white mb-8">
+        <h2 className="text-4xl font-bold text-center text-white mb-12">
           Skills
         </h2>
 
-        <div className="max-w-4xl mx-auto mb-8">
-          <h3 className="text-2xl font-semibold text-white mb-4">
-            Development
+        <div className="max-w-4xl mx-auto mb-12">
+          <h3 className="text-3xl font-semibold text-white mb-6">
+            🛠️ Development
           </h3>
-          <ul className="list-disc list-inside mb-6 text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
             <li>React.js (with TypeScript & Ionic React)</li>
             <li>Node.js & Express.js</li>
             <li>GraphQL & REST APIs</li>
@@ -27,22 +27,24 @@ const Skills: React.FC = () => {
             <li>Tailwind CSS</li>
           </ul>
         </div>
-        <div className="max-w-4xl mx-auto mb-8">
-          <h3 className="text-2xl font-semibold text-white mb-4">
-            DevOps & Cloud
+
+        <div className="max-w-4xl mx-auto mb-12">
+          <h3 className="text-3xl font-semibold text-white mb-6">
+            🛠️ DevOps & Cloud
           </h3>
-          <ul className="list-disc list-inside mb-6 text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
             <li>AWS (EC2, S3, Route 53, CloudFront, Certificate Manager)</li>
             <li>PM2 & Certbot (automated deployments)</li>
             <li>GitHub, GitLab & Bitbucket (Version Control)</li>
             <li>Docker & Containerization</li>
           </ul>
         </div>
-        <div className="max-w-4xl mx-auto mb-8">
-          <h3 className="text-2xl font-semibold text-white mb-4">
-            Methodologies & Tools
+
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-3xl font-semibold text-white mb-6">
+            🛠️ Methodologies & Tools
           </h3>
-          <ul className="list-disc list-inside mb-6 text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
             <li>Agile Methodologies (Scrum, Kanban)</li>
             <li>Atlassian Tools (JIRA, Confluence)</li>
             <li>VS Code & IntelliJ (IDE)</li>
