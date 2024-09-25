@@ -2,7 +2,7 @@ import React from "react";
 
 const Experience: React.FC = () => {
   return (
-    <div className="pt-16 md:pt-32 py-6 md:py-12 bg-gray-900 min-h-screen">
+    <div className="pt-16 md:pt-28 py-6 md:py-12 bg-gray-900 min-h-screen">
       <div className="container mx-auto px-4 sm:px-2 md:px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
           Professional Experience
