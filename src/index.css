@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-dark text-light font-sans select-none; /* Set background and text color, prevent text selection */
+  @apply bg-dark text-light font-sans select-none;
 }
 
 /* Custom styles for links */
@@ -62,16 +62,6 @@ nav a:hover::after {
   background: none;
 }
 
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -85,3 +75,16 @@ nav a:hover::after {
 ::-webkit-scrollbar-track {
   background: #0a192f;
 }
+
+/* Custom styles for code blocks */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Add more custom styles here */
