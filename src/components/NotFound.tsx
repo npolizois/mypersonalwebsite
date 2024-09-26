@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NotFound: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-900 text-white px-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white px-4 md:pt-20 lg:pt-0">
       <div className="text-center">
         <h1 className="text-9xl font-bold text-green-500 animate-bounce sm:text-8xl">
           404
