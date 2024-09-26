@@ -7,7 +7,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ setIsOpen }) => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-cover bg-center container mx-auto px-4 sm:px-2 md:px-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center container mx-auto px-4 sm:px-2 md:px-4 md:pt-28 md:py-12 lg:pt-12">
       <h1 className="text-4xl sm:text-6xl font-extrabold text-white drop-shadow-lg text-center">
         Senior Full Stack Web Developer
       </h1>
