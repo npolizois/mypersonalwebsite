@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +9,8 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ isOpen, setIsOpen }) => {
+  const navbarRef = useRef<HTMLDivElement | null>(null);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -16,6 +18,23 @@ const Navbar: React.FC<NavbarProps> = ({ isOpen, setIsOpen }) => {
   const handleLinkClick = () => {
     setIsOpen(false);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        navbarRef.current &&
+        !navbarRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [setIsOpen]);
 
   return (
     <nav className="fixed top-0 w-full bg-gray-900 z-10 shadow-md">
@@ -70,8 +89,8 @@ const Navbar: React.FC<NavbarProps> = ({ isOpen, setIsOpen }) => {
         </div>
       </div>
 
-      {isOpen && ( // Use the isOpen prop directly
-        <div className="md:hidden bg-gray-800">
+      {isOpen && (
+        <div ref={navbarRef} className="md:hidden bg-gray-800">
           <div className="flex flex-col space-y-4 p-4">
             <Link
               to="/about"
