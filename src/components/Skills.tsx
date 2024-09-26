@@ -2,13 +2,13 @@ import React from "react";
 
 const Skills: React.FC = () => {
   return (
-    <div className="pt-28 py-12 bg-gray-900 min-h-screen">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">
+    <div className="pt-24 md:pt-28 py-6 md:py-12 bg-gray-900 min-h-screen">
+      <div className="container mx-auto px-4 sm:px-2 md:px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
           Skills
         </h2>
 
-        <div className="max-w-4xl mx-auto mb-12">
+        <div className="max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8">
           <h3 className="text-xl md:text-2xl font-semibold text-white mb-6">
             🛠️ Development
           </h3>
