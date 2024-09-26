@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import np from "../assets/np.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
@@ -45,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({ isOpen, setIsOpen }) => {
           className="flex items-center no-underline"
         >
           <img
-            src="/assets/np.webp"
+            src={np}
             alt="Nikos Polyzois"
             className="w-10 h-10 rounded-full mr-2"
           />

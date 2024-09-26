@@ -1,4 +1,5 @@
 import React from "react";
+import arrowIcon from "../assets/arrow-icon.svg";
 
 interface ExperienceProps {
   setIsOpen: (isOpen: boolean) => void;
@@ -12,9 +13,21 @@ const Experience: React.FC<ExperienceProps> = ({ setIsOpen }) => {
           Professional Experience
         </h2>
 
-        <div className="max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8">
-          <h3 className="text-xl md:text-2xl font-semibold text-white">
-            💼 Senior Full Stack Web Application Developer (Lead Dev)
+        <a
+          href="https://www.playerdex.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8 hover:bg-gray-700 transition duration-200 rounded-lg p-4 group" // Add group class to the parent
+        >
+          <h3 className="text-xl md:text-2xl font-semibold text-white flex items-center justify-between">
+            <span className="flex items-center">
+              💼 Senior Full Stack Web Application Developer (Lead Dev)
+              <img
+                src={arrowIcon}
+                alt="arrow"
+                className="h-4 w-4 ml-2 transition-transform duration-300 transform group-hover:-translate-y-1 group-hover:translate-x-1"
+              />
+            </span>
           </h3>
           <p className="text-gray-400">PlayerDex · Full-time</p>
           <p className="text-gray-400">
@@ -39,11 +52,23 @@ const Experience: React.FC<ExperienceProps> = ({ setIsOpen }) => {
             </li>
             <li>DevOps: Automated deployments with PM2, Certbot.</li>
           </ul>
-        </div>
+        </a>
 
-        <div className="max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8">
-          <h3 className="text-xl md:text-2xl font-semibold text-white">
-            💼 Web Application Developer (SAD - TeCo)
+        <a
+          href="https://www.vasscompany.com/en/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8 hover:bg-gray-700 transition duration-200 rounded-lg p-4 group" // Add group class to the parent
+        >
+          <h3 className="text-xl md:text-2xl font-semibold text-white flex items-center justify-between">
+            <span className="flex items-center">
+              💼 Web Application Developer (SAD - TeCo)
+              <img
+                src={arrowIcon}
+                alt="arrow"
+                className="h-4 w-4 ml-2 transition-transform duration-300 transform group-hover:-translate-y-1 group-hover:translate-x-1"
+              />
+            </span>
           </h3>
           <p className="text-gray-400">VASS · Full-time</p>
           <p className="text-gray-400">
@@ -64,11 +89,23 @@ const Experience: React.FC<ExperienceProps> = ({ setIsOpen }) => {
               version control using GitLab.
             </li>
           </ul>
-        </div>
+        </a>
 
-        <div className="max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8">
-          <h3 className="text-xl md:text-2xl font-semibold text-white">
-            💼 Full Stack Web Developer
+        <a
+          href="https://www.ecodress.gr/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8 hover:bg-gray-700 transition duration-200 rounded-lg p-4 group" // Add group class to the parent
+        >
+          <h3 className="text-xl md:text-2xl font-semibold text-white flex items-center justify-between">
+            <span className="flex items-center">
+              💼 Full Stack Web Developer
+              <img
+                src={arrowIcon}
+                alt="arrow"
+                className="h-4 w-4 ml-2 transition-transform duration-300 transform group-hover:-translate-y-1 group-hover:translate-x-1"
+              />
+            </span>
           </h3>
           <p className="text-gray-400">
             Ecodress Branded Clothes By Kilo · Full-time
@@ -93,7 +130,7 @@ const Experience: React.FC<ExperienceProps> = ({ setIsOpen }) => {
               integrated with the ERP.
             </li>
           </ul>
-        </div>
+        </a>
 
         <div className="max-w-full md:max-w-4xl mx-auto text-gray-300">
           <div className="mt-4">
