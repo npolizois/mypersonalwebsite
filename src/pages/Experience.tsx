@@ -45,7 +45,7 @@ const Experience: React.FC<ExperienceProps> = ({ setIsOpen }) => {
           <h3 className="text-xl md:text-2xl font-semibold text-white">
             💼 Web Application Developer (SAD - TeCo)
           </h3>
-          <p className="text-gray-400">VASS IT GREECE · Full-time</p>
+          <p className="text-gray-400">VASS · Full-time</p>
           <p className="text-gray-400">
             Aug 2021 - Dec 2023 · Gerakas, Attiki, Greece · Remote
           </p>
