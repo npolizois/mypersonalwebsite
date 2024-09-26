@@ -1,6 +1,10 @@
 import React from "react";
 
-const About: React.FC = () => {
+interface AboutProps {
+  setIsOpen: (isOpen: boolean) => void;
+}
+
+const About: React.FC<AboutProps> = ({ setIsOpen }) => {
   return (
     <div className="pt-24 md:pt-28 py-6 md:py-12 bg-gray-900 min-h-screen">
       <div className="container mx-auto px-4 sm:px-2 md:px-4">
@@ -74,6 +78,7 @@ const About: React.FC = () => {
             <a
               href="/#/experience"
               className="text-secondary hover:text-green-500 text-lg md:text-xl"
+              onClick={() => setIsOpen(false)}
             >
               Check Out My Experience
             </a>

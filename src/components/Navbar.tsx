@@ -1,19 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-const Navbar: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+interface NavbarProps {
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
+}
 
+const Navbar: React.FC<NavbarProps> = ({ isOpen, setIsOpen }) => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleLinkClick = () => {
+    setIsOpen(false);
   };
 
   return (
     <nav className="fixed top-0 w-full bg-gray-900 z-10 shadow-md">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link to="/" className="flex items-center no-underline">
+        <Link to="/" onClick={handleLinkClick} className="flex items-center">
           <img
             src="/assets/np.webp"
             alt="Nikos Polyzois"
@@ -23,13 +30,25 @@ const Navbar: React.FC = () => {
         </Link>
 
         <div className="hidden md:flex space-x-4">
-          <Link to="/about" className="text-gray-300 hover:text-highlight">
+          <Link
+            to="/about"
+            onClick={handleLinkClick}
+            className="text-gray-300 hover:text-highlight"
+          >
             About
           </Link>
-          <Link to="/experience" className="text-gray-300 hover:text-highlight">
+          <Link
+            to="/experience"
+            onClick={handleLinkClick}
+            className="text-gray-300 hover:text-highlight"
+          >
             Experience
           </Link>
-          <Link to="/skills" className="text-gray-300 hover:text-highlight">
+          <Link
+            to="/skills"
+            onClick={handleLinkClick}
+            className="text-gray-300 hover:text-highlight"
+          >
             Skills
           </Link>
         </div>
@@ -47,27 +66,27 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {isOpen && (
+      {isOpen && ( // Use the isOpen prop directly
         <div className="md:hidden bg-gray-800">
           <div className="flex flex-col space-y-4 p-4">
             <Link
               to="/about"
-              onClick={toggleMenu}
-              className="text-gray-300 hover:text-highlight"
+              onClick={handleLinkClick}
+              className="text-gray-300 hover:text-highlight no-underline"
             >
               About
             </Link>
             <Link
               to="/experience"
-              onClick={toggleMenu}
-              className="text-gray-300 hover:text-highlight"
+              onClick={handleLinkClick}
+              className="text-gray-300 hover:text-highlight no-underline"
             >
               Experience
             </Link>
             <Link
               to="/skills"
-              onClick={toggleMenu}
-              className="text-gray-300 hover:text-highlight"
+              onClick={handleLinkClick}
+              className="text-gray-300 hover:text-highlight no-underline"
             >
               Skills
             </Link>

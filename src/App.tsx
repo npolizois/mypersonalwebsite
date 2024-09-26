@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -10,6 +10,8 @@ import NotFound from "./components/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
 const App: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     const handleCopy = (e: ClipboardEvent) => {
       e.preventDefault();
@@ -26,12 +28,15 @@ const App: React.FC = () => {
     <Router>
       <ScrollToTop />
       <div className="bg-gray-900 text-white min-h-screen flex flex-col">
-        <Navbar />
+        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<Hero />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/experience" element={<Experience />} />
+            <Route path="/" element={<Hero setIsOpen={setIsOpen} />} />
+            <Route path="/about" element={<About setIsOpen={setIsOpen} />} />
+            <Route
+              path="/experience"
+              element={<Experience setIsOpen={setIsOpen} />}
+            />
             <Route path="/skills" element={<Skills />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

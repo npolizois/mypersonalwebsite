@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  setIsOpen: (isOpen: boolean) => void;
+}
+
+const Hero: React.FC<HeroProps> = ({ setIsOpen }) => {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-cover bg-center container mx-auto px-4 sm:px-2 md:px-4">
       <h1 className="text-4xl sm:text-6xl font-extrabold text-white drop-shadow-lg text-center">
@@ -17,6 +21,7 @@ const Hero: React.FC = () => {
       </p>
       <Link
         to="/about"
+        onClick={() => setIsOpen(false)}
         className="mt-8 px-6 sm:px-8 py-2 sm:py-3 bg-green-500 text-white text-lg rounded-lg hover:bg-green-600 transition duration-300"
       >
         Learn More About Me

@@ -1,6 +1,10 @@
 import React from "react";
 
-const Experience: React.FC = () => {
+interface ExperienceProps {
+  setIsOpen: (isOpen: boolean) => void;
+}
+
+const Experience: React.FC<ExperienceProps> = ({ setIsOpen }) => {
   return (
     <div className="pt-24 md:pt-28 py-6 md:py-12 bg-gray-900 min-h-screen">
       <div className="container mx-auto px-4 sm:px-2 md:px-4">
@@ -96,6 +100,7 @@ const Experience: React.FC = () => {
             <a
               href="/assets/resume.pdf"
               className="text-secondary hover:text-green-500 text-lg md:text-xl"
+              onClick={() => setIsOpen(false)}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -108,6 +113,7 @@ const Experience: React.FC = () => {
           <div className="mt-4">
             <a
               href="/#/skills"
+              onClick={() => setIsOpen(false)}
               className="text-secondary hover:text-green-500 text-lg md:text-xl"
             >
               View My Skills
