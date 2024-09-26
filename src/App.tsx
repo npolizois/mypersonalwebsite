@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Skills from "./components/Skills";
+import About from "./pages/About";
+import Experience from "./pages/Experience";
+import Skills from "./pages/Skills";
 import Footer from "./components/Footer";
-import NotFound from "./components/NotFound";
+import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
 const App: React.FC = () => {

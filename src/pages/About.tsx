@@ -1,4 +1,5 @@
 import React from "react";
+import Accordion from "../components/Accordion"; // Adjust the path accordingly
 
 interface AboutProps {
   setIsOpen: (isOpen: boolean) => void;
@@ -17,14 +18,8 @@ const About: React.FC<AboutProps> = ({ setIsOpen }) => {
             💡 Full Stack Web Developer
           </h3>
           <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
-            <li>
-              <strong>Web Apps</strong> development for public and private
-              sectors.
-            </li>
-            <li>
-              Custom-made <strong>ERP</strong> systems using{" "}
-              <strong>OOP</strong> methodology.
-            </li>
+            <li>Web Apps development for public and private sectors.</li>
+            <li>Custom-made ERP systems using OOP methodology.</li>
             <li>CMS-driven websites (MVC-L architecture).</li>
             <li>Affiliation & Dropshipping systems for e-shops.</li>
             <li>
@@ -50,30 +45,30 @@ const About: React.FC<AboutProps> = ({ setIsOpen }) => {
             I use advanced AI Tools to enhance my productivity, assisting in
             problem-solving and refining my ideas.
           </p>
-        </div>
 
-        <div className="max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8">
-          <h3 className="text-xl md:text-2xl font-semibold text-white">
-            💡 E-commerce Administrator
+          <h3 className="text-lg md:text-xl font-semibold text-white mt-8 mb-2">
+            In my previous roles, I also contributed as...
           </h3>
-          <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
-            <li>Site building & management (CMS).</li>
-            <li>Database administration.</li>
-            <li>SEO and digital marketing strategies.</li>
-          </ul>
+
+          <Accordion title="💡 E-commerce Administrator">
+            <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
+              <li>Site building & management (CMS).</li>
+              <li>Database administration.</li>
+              <li>SEO and digital marketing strategies.</li>
+            </ul>
+          </Accordion>
+
+          <Accordion title="💡 IT Specialist (1st - 2nd Level)">
+            <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
+              <li>Hardware and software maintenance.</li>
+              <li>Providing timely IT support.</li>
+              <li>Adhering to organizational confidentiality policies.</li>
+              <li>Working for multinational companies.</li>
+            </ul>
+          </Accordion>
         </div>
 
         <div className="max-w-full md:max-w-4xl mx-auto text-gray-300">
-          <h3 className="text-xl md:text-2xl font-semibold text-white">
-            💡 IT Specialist (1st - 2nd Level)
-          </h3>
-          <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
-            <li>Hardware and software maintenance.</li>
-            <li>Providing timely IT support.</li>
-            <li>Adhering to organizational confidentiality policies.</li>
-            <li>Working for multinational companies.</li>
-          </ul>
-
           <div className="mt-4">
             <a
               href="/#/experience"
