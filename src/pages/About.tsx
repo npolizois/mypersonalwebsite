@@ -21,7 +21,7 @@ const About: React.FC<AboutProps> = ({ setIsOpen }) => {
             <li>Web Apps development for public and private sectors.</li>
             <li>Custom-made ERP systems using OOP methodology.</li>
             <li>CMS-driven websites (MVC-L architecture).</li>
-            <li>Affiliation & Dropshipping systems for e-shops.</li>
+            <li>Affiliation & Dropshipping system for e-shops.</li>
             <li>
               Following TDD coding standards and version control best practices.
             </li>
