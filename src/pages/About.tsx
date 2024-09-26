@@ -41,7 +41,7 @@ const About: React.FC<AboutProps> = ({ setIsOpen }) => {
           <h3 className="text-xl md:text-2xl font-semibold text-white mt-8">
             💡 AI Tools & Productivity
           </h3>
-          <p className="text-base md:text-lg mt-2">
+          <p className="text-base mt-2">
             I use advanced AI Tools to enhance my productivity, assisting in
             problem-solving and refining my ideas.
           </p>

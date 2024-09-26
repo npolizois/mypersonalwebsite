@@ -24,7 +24,7 @@ const Skills: React.FC = () => {
             <li>Object-Oriented Programming (OOP)</li>
             <li>JavaScript & TypeScript</li>
             <li>HTML5 & CSS3</li>
-            <li>Tailwind CSS</li>
+            <li>Tailwind CSS & SCSS</li>
           </ul>
         </div>
 
