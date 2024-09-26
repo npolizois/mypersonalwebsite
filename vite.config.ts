@@ -4,11 +4,16 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   build: {
-    minify: "esbuild", // Vite defaults to esbuild for minification
-    assetsInlineLimit: 4096, // Inlines assets below this size in bytes
+    sourcemap: false,
+    minify: "esbuild",
+    assetsInlineLimit: 4096,
     rollupOptions: {
       output: {
-        manualChunks: undefined, // Adjust chunk splitting for optimization
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            return "vendor";
+          }
+        },
       },
     },
   },
