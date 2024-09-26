@@ -9,21 +9,16 @@ module.exports = {
         secondary: "#64ffda", // Accent color
         dark: "#020c1b", // Darker background color
         light: "#ccd6f6", // Light text color
-        // You can add more colors here as needed
+        highlight: "#38a169", // Custom highlight color for hover effects
       },
       fontFamily: {
-        sans: ['"Inter"', "sans-serif"], // You can use the 'Inter' font or any other font you prefer
+        sans: ['"Inter"', "sans-serif"], // Primary font
+        heading: ['"Roboto Slab"', "serif"], // Heading font
       },
-      // You can extend other theme properties like spacing, font sizes, etc. as needed
+      spacing: {
+        128: "32rem", // Custom large spacing for containers
+      },
     },
   },
   plugins: [],
-  variants: {
-    extend: {
-      // Here you can add variant extensions if needed
-    },
-  },
-  corePlugins: {
-    // You can enable or disable specific core plugins here
-  },
 };

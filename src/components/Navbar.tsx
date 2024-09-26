@@ -13,25 +13,23 @@ const Navbar: React.FC = () => {
   return (
     <nav className="fixed top-0 w-full bg-gray-900 z-10 shadow-md">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="flex items-center cursor-pointer">
-          <Link to="/" className="flex items-center no-underline">
-            <img
-              src="/assets/np.webp"
-              alt="Nikos Polyzois"
-              className="w-10 h-10 rounded-full mr-2"
-            />
-            <span className="text-white font-bold text-lg">Nikos Polyzois</span>
-          </Link>
-        </div>
+        <Link to="/" className="flex items-center no-underline">
+          <img
+            src="/assets/np.webp"
+            alt="Nikos Polyzois"
+            className="w-10 h-10 rounded-full mr-2"
+          />
+          <span className="text-white font-bold text-lg">Nikos Polyzois</span>
+        </Link>
 
         <div className="hidden md:flex space-x-4">
-          <Link to="/about" className="text-gray-300 hover:text-green-500">
+          <Link to="/about" className="text-gray-300 hover:text-highlight">
             About
           </Link>
-          <Link to="/experience" className="text-gray-300 hover:text-green-500">
+          <Link to="/experience" className="text-gray-300 hover:text-highlight">
             Experience
           </Link>
-          <Link to="/skills" className="text-gray-300 hover:text-green-500">
+          <Link to="/skills" className="text-gray-300 hover:text-highlight">
             Skills
           </Link>
         </div>
@@ -55,21 +53,21 @@ const Navbar: React.FC = () => {
             <Link
               to="/about"
               onClick={toggleMenu}
-              className="text-gray-300 hover:text-green-500 no-underline"
+              className="text-gray-300 hover:text-highlight"
             >
               About
             </Link>
             <Link
               to="/experience"
               onClick={toggleMenu}
-              className="text-gray-300 hover:text-green-500 no-underline"
+              className="text-gray-300 hover:text-highlight"
             >
               Experience
             </Link>
             <Link
               to="/skills"
               onClick={toggleMenu}
-              className="text-gray-300 hover:text-green-500 no-underline"
+              className="text-gray-300 hover:text-highlight"
             >
               Skills
             </Link>

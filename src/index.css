@@ -3,17 +3,12 @@
 @tailwind utilities;
 
 body {
-  @apply bg-dark text-light font-sans; /* Set background and text color, and apply the default font */
-}
-
-/* Disable text selection */
-body {
-  @apply select-none;
+  @apply bg-dark text-light font-sans select-none; /* Set background and text color, prevent text selection */
 }
 
 /* Custom styles for links */
 a {
-  @apply text-secondary transition duration-200; /* Use secondary color for links and add a transition */
+  @apply text-secondary transition-colors duration-200;
 }
 
 a:hover {
@@ -27,31 +22,22 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-bold; /* Make all headings bold */
+  @apply font-heading font-bold;
 }
 
 h1 {
-  @apply text-5xl; /* Customize h1 size */
+  @apply text-5xl;
 }
 
 h2 {
-  @apply text-4xl; /* Customize h2 size */
+  @apply text-4xl;
 }
 
 h3 {
-  @apply text-3xl; /* Customize h3 size */
+  @apply text-3xl;
 }
 
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
+/* Smooth hover underline for navbar links */
 nav a {
   position: relative;
 }
@@ -63,7 +49,7 @@ nav a::after {
   height: 2px;
   bottom: -2px;
   left: 50%;
-  background-color: #38a169; /* Tailwind green */
+  background-color: #64ffda;
   transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -76,23 +62,26 @@ nav a:hover::after {
   background: none;
 }
 
-/* Custom scrollbar for better aesthetics */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #64ffda; /* Use your secondary color */
+  background: #64ffda;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a192f; /* Use your primary color */
+  background: #0a192f;
 }
-
-/* Transition for all links */
-a {
-  transition: color 0.3s ease; /* Smooth transition for link color changes */
-}
-
-/* Add any additional global styles here */

@@ -15,7 +15,7 @@ const NotFound: React.FC = () => {
 
         <Link
           to="/"
-          className="mt-6 inline-block bg-green-500 text-white px-6 py-3 rounded-md text-lg hover:bg-green-600 hover:scale-105 transition duration-300 transform"
+          className="mt-6 inline-block px-6 sm:px-8 py-2 sm:py-3 bg-green-500 text-white text-lg rounded-lg hover:bg-green-600 transition duration-300"
         >
           Go Back Home
         </Link>

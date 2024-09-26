@@ -11,11 +11,9 @@ const Hero: React.FC = () => {
         Delivering Scalable and High-Performance Web Applications
       </h2>
       <p className="mt-6 text-lg sm:text-xl text-gray-400 text-center max-w-2xl">
-        With over 7 years of experience in full-stack development, I specialize
-        in creating efficient and innovative solutions. I transform ideas into
-        reality by leveraging the latest technologies to enhance user
-        experiences, ensuring robust functionality and seamless interactions
-        across applications.
+        With over 7 years of experience, I specialize in creating efficient and
+        innovative solutions, transforming ideas into reality by leveraging the
+        latest technologies.
       </p>
       <Link
         to="/about"
