@@ -20,7 +20,11 @@ const Navbar: React.FC<NavbarProps> = ({ isOpen, setIsOpen }) => {
   return (
     <nav className="fixed top-0 w-full bg-gray-900 z-10 shadow-md">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link to="/" onClick={handleLinkClick} className="flex items-center">
+        <Link
+          to="/"
+          onClick={handleLinkClick}
+          className="flex items-center no-underline"
+        >
           <img
             src="/assets/np.webp"
             alt="Nikos Polyzois"
