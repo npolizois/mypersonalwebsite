@@ -53,7 +53,11 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
   return (
     <>
       {isOpen && (
-        <div className="container mx-auto flex justify-end items-center p-4 bg-transparent transition-all duration-1000">
+        <div
+          className={`container mx-auto z-50  flex justify-end items-center p-4 bg-transparent transition-all duration-1000 border-b xs:border-x-white sm:border-none ${
+            isXVisible ? "opacity-100" : "opacity-0"
+          }`}
+        >
           {/* 'X' icon with transition */}
           <button
             onClick={onClose}
@@ -82,28 +86,28 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
               <a
                 href="#"
                 onClick={onClose}
-                className="text-5xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
+                className="text-4xl sm:text-3xl md:text-5xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
               >
                 Home
               </a>
               <a
                 href="#about"
                 onClick={onClose}
-                className="text-5xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
+                className="text-4xl sm:text-3xl md:text-5xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
               >
                 About
               </a>
               <a
                 href="#experience"
                 onClick={onClose}
-                className="text-5xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
+                className="text-4xl sm:text-3xl md:text-5xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
               >
                 Experience
               </a>
               <a
                 href="#skills"
                 onClick={onClose}
-                className="text-5xl text-white hover:text-green-500 transition-colors duration-500"
+                className="text-4xl sm:text-3xl md:text-5xl text-white hover:text-green-500 transition-colors duration-500"
               >
                 Skills
               </a>
