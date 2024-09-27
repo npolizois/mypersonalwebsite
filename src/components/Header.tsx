@@ -11,7 +11,7 @@ const Header: React.FC<HeaderProps> = ({ onToggle }) => {
   return (
     <header className="container mx-auto flex justify-between items-center p-4 bg-transparent transition-all duration-300">
       {/* Logo */}
-      <a href="#hero" className="flex items-center">
+      <a href="#" className="flex items-center">
         <img src={np} alt="Nikos Polyzois" className="w-10 h-10 rounded-full" />
         <span className="ml-3 text-white text-xl font-bold">
           Nikos Polyzois
