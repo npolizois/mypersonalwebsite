@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface AccordionProps {
   title: string;
@@ -18,13 +19,19 @@ const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
         <span>{isOpen ? "−" : "+"}</span>
       </button>
 
-      <div
-        className={`overflow-hidden transition-max-height duration-300 ease-in-out ${
-          isOpen ? "max-h-60" : "max-h-0"
-        }`}
-      >
-        <div className="p-4 bg-gray-700 text-gray-300">{children}</div>
-      </div>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }} // Initial state
+            animate={{ opacity: 1, height: "auto" }} // Animated state
+            exit={{ opacity: 0, height: 0 }} // Exit state
+            transition={{ duration: 0.3 }} // Transition duration
+            className="p-4 bg-gray-700 text-gray-300"
+          >
+            {children}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

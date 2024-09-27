@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
   }, [isOpen]);
 
   return (
-    <nav className="fixed top-0 w-full z-50 flex justify-between items-center p-4 bg-transparent transition-all duration-300">
+    <nav className="container mx-auto top-0 w-full z-50 flex flex-row justify-between items-center p-4 bg-transparent transition-all duration-300">
       {/* Logo */}
       <a href="#hero" className="flex items-center">
         <img src={np} alt="Nikos Polyzois" className="w-10 h-10 rounded-full" />
