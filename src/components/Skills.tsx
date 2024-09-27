@@ -19,11 +19,11 @@ const Skills: React.FC = () => {
           Skills
         </h2>
 
-        <div className="max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8">
+        <div className="mb-8">
           <h3 className="text-xl md:text-2xl font-semibold text-white mb-6">
             🛠️ Development
           </h3>
-          <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
+          <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8">
             <li>React.js (TypeScript / Ionic / Material)</li>
             <li>Node.js & Express.js</li>
             <li>GraphQL & REST APIs</li>
@@ -39,11 +39,11 @@ const Skills: React.FC = () => {
           </ul>
         </div>
 
-        <div className="max-w-4xl mx-auto mb-12">
+        <div className="mb-12">
           <h3 className="text-xl md:text-2xl font-semibold text-white mb-6">
             🛠️ DevOps & Cloud
           </h3>
-          <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
+          <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8">
             <li>AWS (EC2, S3, Route 53, CloudFront, Certificate Manager)</li>
             <li>PM2 & Certbot (automated deployments)</li>
             <li>GitHub, GitLab & Bitbucket (Version Control)</li>
@@ -51,11 +51,11 @@ const Skills: React.FC = () => {
           </ul>
         </div>
 
-        <div className="max-w-4xl mx-auto mb-12">
+        <div className="mb-12">
           <h3 className="text-xl md:text-2xl font-semibold text-white mb-6">
             🛠️ Methodologies & Tools
           </h3>
-          <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
+          <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8">
             <li>Agile Methodologies (Scrum, Kanban)</li>
             <li>Atlassian Tools (JIRA, Confluence)</li>
             <li>Integrated Development Environments (VS Code, IntelliJ)</li>
@@ -63,11 +63,11 @@ const Skills: React.FC = () => {
           </ul>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div>
           <h3 className="text-xl md:text-2xl font-semibold text-white mb-6">
             🛠️ Soft Skills
           </h3>
-          <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
+          <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8">
             <li>Analytical Thinking</li>
             <li>Organization skills</li>
             <li>Detail-oriented</li>

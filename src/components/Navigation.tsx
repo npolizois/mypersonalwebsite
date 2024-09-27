@@ -82,28 +82,28 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
               <a
                 href="#"
                 onClick={onClose}
-                className="text-4xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
+                className="text-5xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
               >
                 Home
               </a>
               <a
                 href="#about"
                 onClick={onClose}
-                className="text-4xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
+                className="text-5xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
               >
                 About
               </a>
               <a
                 href="#experience"
                 onClick={onClose}
-                className="text-4xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
+                className="text-5xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
               >
                 Experience
               </a>
               <a
                 href="#skills"
                 onClick={onClose}
-                className="text-4xl text-white hover:text-green-500 transition-colors duration-500"
+                className="text-5xl text-white hover:text-green-500 transition-colors duration-500"
               >
                 Skills
               </a>
