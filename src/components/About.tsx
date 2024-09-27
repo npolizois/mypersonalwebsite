@@ -1,13 +1,9 @@
 import React from "react";
-import Accordion from "../components/Accordion"; // Adjust the path accordingly
+import Accordion from "./Accordion"; // Adjust the path accordingly
 
-interface AboutProps {
-  setIsOpen: (isOpen: boolean) => void;
-}
-
-const About: React.FC<AboutProps> = ({ setIsOpen }) => {
+const About: React.FC = () => {
   return (
-    <div className="pt-24 md:pt-28 py-6 md:py-12 bg-gray-900 min-h-screen">
+    <div className="py-6 md:py-12 bg-gray-900 min-h-screen">
       <div className="container mx-auto px-4 sm:px-2 md:px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
           About Me
@@ -66,18 +62,6 @@ const About: React.FC<AboutProps> = ({ setIsOpen }) => {
               <li>Working for multinational companies.</li>
             </ul>
           </Accordion>
-        </div>
-
-        <div className="max-w-full md:max-w-4xl mx-auto text-gray-300">
-          <div className="mt-4">
-            <a
-              href="/#/experience"
-              className="text-secondary hover:text-green-500 text-lg md:text-xl"
-              onClick={() => setIsOpen(false)}
-            >
-              Check Out My Experience
-            </a>
-          </div>
         </div>
       </div>
     </div>

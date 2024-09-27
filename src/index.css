@@ -37,29 +37,13 @@ h3 {
   @apply text-3xl;
 }
 
-/* Smooth hover underline for navbar links */
 nav a {
   position: relative;
-}
-
-nav a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -2px;
-  left: 50%;
-  background-color: #38a169;
-  transition: width 0.3s ease, left 0.3s ease;
 }
 
 nav a:hover::after {
   width: 100%;
   left: 0;
-}
-
-.no-underline::after {
-  background: none;
 }
 
 /* Custom scrollbar */

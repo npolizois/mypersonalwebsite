@@ -1,13 +1,9 @@
 import React from "react";
 import arrowIcon from "../assets/arrow-icon.svg";
 
-interface ExperienceProps {
-  setIsOpen: (isOpen: boolean) => void;
-}
-
-const Experience: React.FC<ExperienceProps> = ({ setIsOpen }) => {
+const Experience: React.FC = () => {
   return (
-    <div className="pt-24 md:pt-28 py-6 md:py-12 bg-gray-900 min-h-screen">
+    <div className="py-6 md:py-12 bg-gray-900 min-h-screen">
       <div className="container mx-auto px-4 sm:px-2 md:px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
           Professional Experience
@@ -137,23 +133,10 @@ const Experience: React.FC<ExperienceProps> = ({ setIsOpen }) => {
             <a
               href="/assets/resume.pdf"
               className="text-secondary hover:text-green-500 text-lg md:text-xl"
-              onClick={() => setIsOpen(false)}
               target="_blank"
               rel="noopener noreferrer"
             >
               View Full Résumé
-            </a>
-          </div>
-        </div>
-
-        <div className="max-w-full md:max-w-4xl mx-auto text-gray-300">
-          <div className="mt-4">
-            <a
-              href="/#/skills"
-              onClick={() => setIsOpen(false)}
-              className="text-secondary hover:text-green-500 text-lg md:text-xl"
-            >
-              View My Skills
             </a>
           </div>
         </div>
