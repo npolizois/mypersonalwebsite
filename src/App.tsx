@@ -21,6 +21,7 @@ const App: React.FC = () => {
 
   return (
     <div className="bg-gray-900 text-white min-h-screen flex flex-col">
+      {/* NavBar Section */}
       <Navbar />
       <main className="flex-grow">
         {/* Hero Section */}

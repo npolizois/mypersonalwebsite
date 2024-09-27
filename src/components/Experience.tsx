@@ -4,7 +4,7 @@ import arrowIcon from "../assets/arrow-icon.svg";
 
 const fadeIn = {
   hidden: { opacity: 0 },
-visible: { opacity: 1, transition: { duration: 2, delay: 1.5 } }, // Experience starts after About
+  visible: { opacity: 1, transition: { duration: 2, delay: 1.5 } }, // Experience starts after About
 };
 
 const Experience: React.FC = () => {
@@ -138,6 +138,16 @@ const Experience: React.FC = () => {
             </li>
           </ul>
         </a>
+        <div className="max-w-full md:max-w-4xl mx-auto text-gray-300">
+          <a
+            href="/assets/CV_Nikos_Polyzois.pdf"
+            className="text-secondary hover:text-green-500 text-lg md:text-xl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Full Résumé
+          </a>
+        </div>
       </div>
     </motion.div>
   );
