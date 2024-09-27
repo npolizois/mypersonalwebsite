@@ -1,9 +1,20 @@
 import React from "react";
+import { motion } from "framer-motion";
 import arrowIcon from "../assets/arrow-icon.svg";
+
+const fadeIn = {
+  hidden: { opacity: 0 },
+visible: { opacity: 1, transition: { duration: 2, delay: 1.5 } }, // Experience starts after About
+};
 
 const Experience: React.FC = () => {
   return (
-    <div className="py-6 md:py-12 bg-gray-900 min-h-screen">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={fadeIn}
+      className="py-6 md:py-12 bg-gray-900 min-h-screen"
+    >
       <div className="container mx-auto px-4 sm:px-2 md:px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
           Professional Experience
@@ -13,7 +24,7 @@ const Experience: React.FC = () => {
           href="https://www.playerdex.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="block max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8 hover:bg-gray-700 transition duration-200 rounded-lg p-4 group" // Add group class to the parent
+          className="block max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8 hover:bg-gray-700 transition duration-200 rounded-lg p-4 group"
         >
           <h3 className="text-xl md:text-2xl font-semibold text-white flex items-center justify-between">
             <span className="flex items-center">
@@ -54,7 +65,7 @@ const Experience: React.FC = () => {
           href="https://www.vasscompany.com/en/"
           target="_blank"
           rel="noopener noreferrer"
-          className="block max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8 hover:bg-gray-700 transition duration-200 rounded-lg p-4 group" // Add group class to the parent
+          className="block max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8 hover:bg-gray-700 transition duration-200 rounded-lg p-4 group"
         >
           <h3 className="text-xl md:text-2xl font-semibold text-white flex items-center justify-between">
             <span className="flex items-center">
@@ -91,7 +102,7 @@ const Experience: React.FC = () => {
           href="https://www.ecodress.gr/"
           target="_blank"
           rel="noopener noreferrer"
-          className="block max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8 hover:bg-gray-700 transition duration-200 rounded-lg p-4 group" // Add group class to the parent
+          className="block max-w-full md:max-w-4xl mx-auto text-gray-300 mb-8 hover:bg-gray-700 transition duration-200 rounded-lg p-4 group"
         >
           <h3 className="text-xl md:text-2xl font-semibold text-white flex items-center justify-between">
             <span className="flex items-center">
@@ -127,21 +138,8 @@ const Experience: React.FC = () => {
             </li>
           </ul>
         </a>
-
-        <div className="max-w-full md:max-w-4xl mx-auto text-gray-300">
-          <div className="mt-4">
-            <a
-              href="/assets/resume.pdf"
-              className="text-secondary hover:text-green-500 text-lg md:text-xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Full Résumé
-            </a>
-          </div>
-        </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

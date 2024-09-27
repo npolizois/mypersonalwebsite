@@ -1,9 +1,20 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Accordion from "./Accordion"; // Adjust the path accordingly
+
+const fadeIn = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 2, delay: 1 } }, // About starts after Home
+};
 
 const About: React.FC = () => {
   return (
-    <div className="py-6 md:py-12 bg-gray-900 min-h-screen">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={fadeIn}
+      className="py-6 md:py-12 bg-gray-900 min-h-screen"
+    >
       <div className="container mx-auto px-4 sm:px-2 md:px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
           About Me
@@ -64,7 +75,7 @@ const About: React.FC = () => {
           </Accordion>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

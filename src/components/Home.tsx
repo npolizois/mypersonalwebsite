@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const fadeIn = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 3, delay: 0.5 } },
+  visible: { opacity: 1, transition: { duration: 2, delay: 0.5 } },
 };
 
 const Home: React.FC = () => {
