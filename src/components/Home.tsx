@@ -22,7 +22,7 @@ const Home: React.FC<HomeProps> = ({ isNavOpen }) => {
       }}
       className={`${
         isNavOpen ? "hidden" : ""
-      } flex flex-col md:flex-row items-center justify-between container mx-auto px-4 py-12`}
+      } flex flex-col md:flex-row items-center justify-between container mx-auto px-4 py-12 md:min-h-screen lg:min-h-fit`}
     >
       <div className="flex flex-col items-start max-w-full xs:max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl space-y-2">
         <h1 className="text-5xl md:text-6xl font-extrabold text-light drop-shadow-lg">

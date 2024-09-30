@@ -19,7 +19,7 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
       variants={fadeIn}
       className={`${
         isNavOpen ? "hidden" : ""
-      } flex flex-col md:flex-row items-center justify-between container mx-auto px-4 py-12 md:min-h-screen`}
+      } flex flex-col md:flex-row items-center justify-between container mx-auto px-4 py-12 md:min-h-screen lg:min-h-fit`}
     >
       <div className="flex-shrink-0">
         <div className="relative">
@@ -27,24 +27,24 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
           <img
             src={np}
             alt="Nikos Polyzois"
-            className="relative rounded-lg shadow-lg m-full xs:max-w-md md:max-w-md lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl z-10"
+            className="relative rounded-lg shadow-lg m-full xs:max-w-md md:max-w-sm lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl z-10"
           />
         </div>
       </div>
-      <div className="md:ml-8 mt-8 md:mt-0 flex flex-col items-start max-w-full xs:max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl space-y-2">
+      <div className="md:ml-8 mt-12 md:mt-0 flex flex-col items-start max-w-full xs:max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl space-y-2">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
           About Me
         </h2>
-        <p className="text-gray-300">
+        <p className="md:text-xs lg:text-sm xl:text-base text-gray-300">
           I am Nikos Polyzois, a Full Stack Web Developer with a diverse skill
           set encompassing web application development, custom ERP systems, and
           CMS-driven solutions. With a strong foundation in both front-end and
           back-end technologies, I excel in Typescript, React.js, Node.js, and
-          Angular. I am passionate about creating seamless digital
-          experiences, combining my technical proficiency with a keen eye for
-          design to enhance functionality and user satisfaction.
+          Angular. I am passionate about creating seamless digital experiences,
+          combining my technical proficiency with a keen eye for design to
+          enhance functionality and user satisfaction.
         </p>
-        <p className="text-gray-300">
+        <p className="md:text-xs lg:text-sm xl:text-base text-gray-300">
           I am committed to best practices in Test-Driven Development (TDD) and
           version control, thriving in collaborative environments where I can
           bring creativity and innovative problem-solving to every project. My
@@ -53,7 +53,7 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
           leveraging advanced AI tools to streamline workflows and enhance
           productivity.
         </p>
-        <p className="text-gray-300">
+        <p className="md:hidden lg:block lg:text-sm xl:text-base text-gray-300">
           In my previous roles as an E-commerce Administrator and IT Specialist,
           I focused on site management, SEO strategies, and IT support for
           multinational companies. I believe my ability to harmonize technical
