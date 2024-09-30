@@ -39,8 +39,8 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
           I am Nikos Polyzois, a Full Stack Web Developer with a diverse skill
           set encompassing web application development, custom ERP systems, and
           CMS-driven solutions. With a strong foundation in both front-end and
-          back-end technologies, I excel in JavaScript, React, Node.js, and
-          Tailwind CSS. I am passionate about creating seamless digital
+          back-end technologies, I excel in Typescript, React.js, Node.js, and
+          Angular. I am passionate about creating seamless digital
           experiences, combining my technical proficiency with a keen eye for
           design to enhance functionality and user satisfaction.
         </p>
