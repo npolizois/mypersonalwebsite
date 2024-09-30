@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Accordion from "./Accordion";
 
@@ -12,8 +12,6 @@ const fadeIn = {
 };
 
 const About: React.FC<AboutProps> = ({ isNavOpen }) => {
-  const [maxHeight, setMaxHeight] = useState(0);
-
   return (
     <motion.div
       initial="hidden"
@@ -72,11 +70,7 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
         </h3>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4">
-          <Accordion
-            title="💡 E-commerce Administrator"
-            setMaxHeight={setMaxHeight}
-            maxHeight={maxHeight}
-          >
+          <Accordion title="💡 E-commerce Administrator">
             <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
               <li>Site building & management (CMS).</li>
               <li>Database administration.</li>
@@ -84,11 +78,7 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
             </ul>
           </Accordion>
 
-          <Accordion
-            title="💡 IT Specialist (1st - 2nd Level)"
-            setMaxHeight={setMaxHeight}
-            maxHeight={maxHeight}
-          >
+          <Accordion title="💡 IT Specialist (1st - 2nd Level)">
             <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
               <li>Hardware and software maintenance.</li>
               <li>Providing timely IT support.</li>

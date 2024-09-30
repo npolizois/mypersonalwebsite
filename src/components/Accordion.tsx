@@ -1,28 +1,13 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface AccordionProps {
   title: string;
   children: React.ReactNode;
-  setMaxHeight: (height: number) => void;
-  maxHeight: number;
 }
 
-const Accordion: React.FC<AccordionProps> = ({
-  title,
-  children,
-  setMaxHeight,
-  maxHeight,
-}) => {
+const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const contentRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (contentRef.current && isOpen) {
-      const contentHeight = contentRef.current.scrollHeight;
-      setMaxHeight(contentHeight);
-    }
-  }, [isOpen, setMaxHeight]);
 
   return (
     <div className="mb-4">
@@ -38,11 +23,10 @@ const Accordion: React.FC<AccordionProps> = ({
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: maxHeight }}
+            animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
             className="p-4 bg-gray-700 text-gray-300"
-            ref={contentRef}
             style={{ overflow: "hidden" }}
           >
             {children}
