@@ -7,7 +7,18 @@ interface SkillsProps {
 
 const fadeIn = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 2, delay: 2 } },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 2,
+      delay: 2,
+    },
+  },
+};
+
+const listItemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
 };
 
 const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
@@ -26,61 +37,161 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
         </h2>
 
         <div className="mb-8">
-          <h3 className="text-xl md:text-2xl font-semibold text-white mb-6">
-            🛠️ Development
-          </h3>
-          <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8">
-            <li>React.js (TypeScript / Ionic / Material)</li>
-            <li>Node.js & Express.js</li>
-            <li>GraphQL & REST APIs</li>
-            <li>MongoDB & Mongoose</li>
-            <li>MySQL, Oracle & MariaDB</li>
-            <li>PHP (WordPress, OpenCart)</li>
-            <li>Test-Driven Development (TDD)</li>
-            <li>Unit & Integration Testing (Mocha, Sinon, Chai, Cypress)</li>
-            <li>Object-Oriented Programming (OOP)</li>
-            <li>JavaScript & TypeScript</li>
-            <li>HTML5 & CSS3</li>
-            <li>Tailwind CSS & SCSS</li>
-          </ul>
+          <motion.h3
+            className="text-xl md:text-2xl font-semibold text-white mb-6 flex items-center"
+            whileHover="hover" // Applies hover to the entire h3
+          >
+            <motion.span
+              className="inline-block"
+              variants={{
+                hover: { rotate: 360 }, // Only the icon spins when h3 is hovered
+              }}
+              transition={{ duration: 0.8 }}
+            >
+              🛠️
+            </motion.span>
+            <span className="ml-2">Development</span>
+          </motion.h3>
+          <motion.ul
+            className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8"
+            variants={fadeIn}
+          >
+            {[
+              "React.js (TypeScript / Ionic / Material)",
+              "Node.js & Express.js",
+              "GraphQL & REST APIs",
+              "MongoDB & Mongoose",
+              "MySQL, Oracle & MariaDB",
+              "PHP (WordPress, OpenCart)",
+              "Test-Driven Development (TDD)",
+              "Unit & Integration Testing (Mocha, Sinon, Chai, Cypress)",
+              "Object-Oriented Programming (OOP)",
+              "JavaScript & TypeScript",
+              "HTML5 & CSS3",
+              "Tailwind CSS & SCSS",
+            ].map((skill, index) => (
+              <motion.li
+                key={index}
+                className="hover:scale-105 transition-transform"
+                variants={listItemVariants}
+              >
+                {skill}
+              </motion.li>
+            ))}
+          </motion.ul>
         </div>
 
         <div className="mb-12">
-          <h3 className="text-xl md:text-2xl font-semibold text-white mb-6">
-            🛠️ DevOps & Cloud
-          </h3>
-          <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8">
-            <li>AWS (EC2, S3, Route 53, CloudFront, Certificate Manager)</li>
-            <li>PM2 & Certbot (automated deployments)</li>
-            <li>GitHub, GitLab & Bitbucket (Version Control)</li>
-            <li>Docker & Containerization</li>
-          </ul>
+          <motion.h3
+            className="text-xl md:text-2xl font-semibold text-white mb-6 flex items-center"
+            whileHover="hover"
+          >
+            <motion.span
+              className="inline-block"
+              variants={{
+                hover: { rotate: 360 },
+              }}
+              transition={{ duration: 0.8 }}
+            >
+              🛠️
+            </motion.span>
+            <span className="ml-2">DevOps & Cloud</span>
+          </motion.h3>
+          <motion.ul
+            className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8"
+            variants={fadeIn}
+          >
+            {[
+              "AWS (EC2, S3, Route 53, CloudFront, Certificate Manager)",
+              "PM2 & Certbot (automated deployments)",
+              "GitHub, GitLab & Bitbucket (Version Control)",
+              "Docker & Containerization",
+            ].map((skill, index) => (
+              <motion.li
+                key={index}
+                className="hover:scale-105 transition-transform"
+                variants={listItemVariants}
+              >
+                {skill}
+              </motion.li>
+            ))}
+          </motion.ul>
         </div>
 
         <div className="mb-12">
-          <h3 className="text-xl md:text-2xl font-semibold text-white mb-6">
-            🛠️ Methodologies & Tools
-          </h3>
-          <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8">
-            <li>Agile Methodologies (Scrum, Kanban)</li>
-            <li>Atlassian Tools (JIRA, Confluence)</li>
-            <li>Integrated Development Environments (VS Code, IntelliJ)</li>
-            <li>AI Tools</li>
-          </ul>
+          <motion.h3
+            className="text-xl md:text-2xl font-semibold text-white mb-6 flex items-center"
+            whileHover="hover"
+          >
+            <motion.span
+              className="inline-block"
+              variants={{
+                hover: { rotate: 360 },
+              }}
+              transition={{ duration: 0.8 }}
+            >
+              🛠️
+            </motion.span>
+            <span className="ml-2">Methodologies & Tools</span>
+          </motion.h3>
+          <motion.ul
+            className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8"
+            variants={fadeIn}
+          >
+            {[
+              "Agile Methodologies (Scrum, Kanban)",
+              "Atlassian Tools (JIRA, Confluence)",
+              "Integrated Development Environments (VS Code, IntelliJ)",
+              "AI Tools",
+            ].map((skill, index) => (
+              <motion.li
+                key={index}
+                className="hover:scale-105 transition-transform"
+                variants={listItemVariants}
+              >
+                {skill}
+              </motion.li>
+            ))}
+          </motion.ul>
         </div>
 
         <div>
-          <h3 className="text-xl md:text-2xl font-semibold text-white mb-6">
-            🛠️ Soft Skills
-          </h3>
-          <ul className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8">
-            <li>Analytical Thinking</li>
-            <li>Organization skills</li>
-            <li>Detail-oriented</li>
-            <li>Critical Thinking</li>
-            <li>Time Management</li>
-            <li>Communication Skills</li>
-          </ul>
+          <motion.h3
+            className="text-xl md:text-2xl font-semibold text-white mb-6 flex items-center"
+            whileHover="hover"
+          >
+            <motion.span
+              className="inline-block"
+              variants={{
+                hover: { rotate: 360 },
+              }}
+              transition={{ duration: 0.8 }}
+            >
+              🛠️
+            </motion.span>
+            <span className="ml-2">Soft Skills</span>
+          </motion.h3>
+          <motion.ul
+            className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8"
+            variants={fadeIn}
+          >
+            {[
+              "Analytical Thinking",
+              "Organization skills",
+              "Detail-oriented",
+              "Critical Thinking",
+              "Time Management",
+              "Communication Skills",
+            ].map((skill, index) => (
+              <motion.li
+                key={index}
+                className="hover:scale-105 transition-transform"
+                variants={listItemVariants}
+              >
+                {skill}
+              </motion.li>
+            ))}
+          </motion.ul>
         </div>
       </div>
     </motion.div>
