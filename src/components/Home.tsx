@@ -38,7 +38,7 @@ const Home: React.FC<HomeProps> = ({ isNavOpen }) => {
         </p>
       </div>
 
-      <div className="flex-shrink-0 md:ml-8 mt-8 md:mt-0">
+      <div className="flex-shrink-0 md:ml-8">
         <img
           src={background}
           alt="Nikos Polyzois"
