@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Accordion from "./Accordion";
+import np from "../assets/np.jpeg";
 
 interface AboutProps {
   isNavOpen: boolean;
@@ -8,7 +8,7 @@ interface AboutProps {
 
 const fadeIn = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 2, delay: 1 } },
+  visible: { opacity: 1, transition: { duration: 1, delay: 0.5 } },
 };
 
 const About: React.FC<AboutProps> = ({ isNavOpen }) => {
@@ -17,76 +17,50 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
       initial="hidden"
       animate="visible"
       variants={fadeIn}
-      className={`${isNavOpen ? "hidden" : ""} py-6 md:py-12 bg-gray-900`}
+      className={`${
+        isNavOpen ? "hidden" : ""
+      } flex flex-col md:flex-row items-center justify-between container mx-auto px-4 py-12 md:min-h-screen`}
     >
-      <div className="container mx-auto px-4 sm:px-2 md:px-4">
+      <div className="flex-shrink-0">
+        <div className="relative">
+          <div className="absolute inset-0 bg-gray-800 rounded-lg shadow-lg transform scale-105"></div>
+          <img
+            src={np}
+            alt="Nikos Polyzois"
+            className="relative rounded-lg shadow-lg m-full xs:max-w-md md:max-w-md lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl z-10"
+          />
+        </div>
+      </div>
+      <div className="md:ml-8 mt-8 md:mt-0 flex flex-col items-start max-w-full xs:max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl space-y-2">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
           About Me
         </h2>
-
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 text-gray-300 mb-8">
-          <div>
-            <h3 className="text-xl md:text-2xl font-semibold text-white">
-              💡 Full Stack Web Developer
-            </h3>
-            <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
-              <li>Web Apps development for public and private sectors.</li>
-              <li>Custom-made ERP systems using OOP methodology.</li>
-              <li>CMS-driven websites (MVC-L architecture).</li>
-              <li>Affiliation & Dropshipping system for e-shops.</li>
-              <li>
-                Following TDD coding standards and version control best
-                practices.
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-xl md:text-2xl font-semibold text-white">
-              💡 Services I Offer
-            </h3>
-            <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
-              <li>Custom theme and plugin development.</li>
-              <li>API interfaces (REST & GraphQL).</li>
-              <li>Database administration and engineering.</li>
-              <li>DevOps responsibilities.</li>
-              <li>Experience in both large and small team environments.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-xl md:text-2xl font-semibold text-white">
-              💡 AI Tools & Productivity
-            </h3>
-            <p className="text-base mt-2">
-              I use advanced AI Tools to enhance my productivity, assisting in
-              problem-solving and refining my ideas.
-            </p>
-          </div>
-        </div>
-
-        <h3 className="text-lg md:text-xl font-semibold text-white mt-8 mb-2">
-          In my previous roles, I also contributed as...
-        </h3>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4">
-          <Accordion title="💡 E-commerce Administrator">
-            <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
-              <li>Site building & management (CMS).</li>
-              <li>Database administration.</li>
-              <li>SEO and digital marketing strategies.</li>
-            </ul>
-          </Accordion>
-
-          <Accordion title="💡 IT Specialist (1st - 2nd Level)">
-            <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
-              <li>Hardware and software maintenance.</li>
-              <li>Providing timely IT support.</li>
-              <li>Adhering to organizational confidentiality policies.</li>
-              <li>Working for multinational companies.</li>
-            </ul>
-          </Accordion>
-        </div>
+        <p className="text-gray-300">
+          I am Nikos Polyzois, a Full Stack Web Developer with a diverse skill
+          set encompassing web application development, custom ERP systems, and
+          CMS-driven solutions. With a strong foundation in both front-end and
+          back-end technologies, I excel in JavaScript, React, Node.js, and
+          Tailwind CSS. I am passionate about creating seamless digital
+          experiences, combining my technical proficiency with a keen eye for
+          design to enhance functionality and user satisfaction.
+        </p>
+        <p className="text-gray-300">
+          I am committed to best practices in Test-Driven Development (TDD) and
+          version control, thriving in collaborative environments where I can
+          bring creativity and innovative problem-solving to every project. My
+          experience includes building e-commerce platforms, developing API
+          interfaces, and providing database administration, all while
+          leveraging advanced AI tools to streamline workflows and enhance
+          productivity.
+        </p>
+        <p className="text-gray-300">
+          In my previous roles as an E-commerce Administrator and IT Specialist,
+          I focused on site management, SEO strategies, and IT support for
+          multinational companies. I believe my ability to harmonize technical
+          and creative elements positions me as a valuable asset to any
+          development team, ready to tackle complex challenges and drive
+          impactful solutions.
+        </p>
       </div>
     </motion.div>
   );

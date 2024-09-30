@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -10,17 +10,7 @@ import Footer from "./components/Footer";
 const App: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  useEffect(() => {
-    const handleCopy = (e: ClipboardEvent) => {
-      e.preventDefault();
-    };
-
-    document.addEventListener("copy", handleCopy);
-
-    return () => {
-      document.removeEventListener("copy", handleCopy);
-    };
-  }, []);
+  
 
   const onToggleNav = () => {
     const newNavState = !isNavOpen;
