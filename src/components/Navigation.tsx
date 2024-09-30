@@ -10,45 +10,38 @@ interface NavigationProps {
 const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
   const overlayRef = useRef<HTMLDivElement | null>(null);
   const [isContentVisible, setIsContentVisible] = useState(false);
-  const [isXVisible, setIsXVisible] = useState(false); // State for 'X' icon visibility
-
-  // Close the overlay when clicking outside the content
-  const handleClickOutside = (event: MouseEvent) => {
-    if (overlayRef.current && overlayRef.current === event.target) {
-      onClose();
-    }
-  };
+  const [isXVisible, setIsXVisible] = useState(false);
 
   useEffect(() => {
-    // Add event listener when overlay is open
+    const handleClickOutside = (event: MouseEvent) => {
+      if (overlayRef.current && overlayRef.current === event.target) {
+        onClose();
+      }
+    };
+
     if (isOpen) {
       document.addEventListener("mousedown", handleClickOutside);
       document.body.style.overflow = "hidden";
 
-      // Delay showing the menu content and 'X' icon
       const timerContent = setTimeout(() => {
         setIsContentVisible(true);
-      }, 1000); // Delay for menu items (500ms)
+      }, 1000);
 
       const timerX = setTimeout(() => {
         setIsXVisible(true);
-      }, 1000); // Delay for 'X' icon (500ms)
+      }, 1000);
 
       return () => {
-        clearTimeout(timerContent); // Clear the content timer
-        clearTimeout(timerX); // Clear the 'X' icon timer
+        clearTimeout(timerContent);
+        clearTimeout(timerX);
+        document.removeEventListener("mousedown", handleClickOutside);
       };
     } else {
       setIsContentVisible(false);
-      setIsXVisible(false); // Reset 'X' icon visibility
+      setIsXVisible(false);
       document.body.style.overflow = "auto";
     }
-
-    // Clean up listener when overlay closes
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [isOpen]);
+  }, [isOpen, onClose]);
 
   return (
     <>
@@ -58,7 +51,6 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
             isXVisible ? "opacity-100" : "opacity-0"
           }`}
         >
-          {/* 'X' icon with transition */}
           <button
             onClick={onClose}
             className={`text-white z-50 focus:outline-none hover:text-green-500 transition-opacity duration-500 ${
@@ -76,7 +68,6 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
         } z-40`}
       >
         <div className="container mx-auto flex flex-row justify-between p-4 bg-transparent transition-all duration-500">
-          {/* Menu Content */}
           <div className="flex flex-col items-start justify-center h-full px-6 md:px-12 space-y-6 z-50">
             <div
               className={`flex flex-col space-y-4 text-left transition-opacity duration-500 ${

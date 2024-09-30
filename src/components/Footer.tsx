@@ -10,7 +10,8 @@ const Footer: React.FC = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
         {/* Copyright Text on the Left (and stacked on mobile) */}
         <div className="text-center md:text-left text-gray-400">
-          Copyright © {new Date().getFullYear()} Nikos Polyzois. All rights reserved.
+          <span className="hidden md:inline-block">Copyright</span> ©{" "}
+          {new Date().getFullYear()} Nikos Polyzois. All rights reserved.
         </div>
 
         {/* Social Icons on the Right (and stacked below the text on mobile) */}
