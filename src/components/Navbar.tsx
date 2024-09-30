@@ -1,11 +1,29 @@
 import React, { useRef, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
 interface NavigationProps {
   isOpen: boolean;
   onClose: () => void;
 }
+
+const containerVariants = {
+  hidden: { opacity: 0, x: -50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delayChildren: 0.5,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
   const overlayRef = useRef<HTMLDivElement | null>(null);
@@ -61,6 +79,7 @@ const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
           </button>
         </div>
       )}
+
       <div
         ref={overlayRef}
         className={`fixed inset-0  bg-highlight bg-opacity-100 flex transition-all duration-1000 transform ${
@@ -68,12 +87,13 @@ const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
         } z-40`}
       >
         <div className="container mx-auto flex flex-row justify-between p-4 bg-transparent transition-all duration-500">
-          <div className="flex flex-col items-start justify-center h-full px-6 md:px-12 space-y-6 z-50">
-            <div
-              className={`flex flex-col space-y-4 text-left transition-opacity duration-500 ${
-                isContentVisible ? "opacity-100" : "opacity-0"
-              }`}
-            >
+          <motion.div
+            className="flex flex-col items-start justify-center h-full px-6 md:px-12 space-y-6 z-50"
+            variants={containerVariants}
+            initial="hidden"
+            animate={isContentVisible ? "visible" : "hidden"}
+          >
+            <motion.div variants={itemVariants}>
               <a
                 href="#home"
                 onClick={onClose}
@@ -81,6 +101,8 @@ const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
               >
                 Home
               </a>
+            </motion.div>
+            <motion.div variants={itemVariants}>
               <a
                 href="#about"
                 onClick={onClose}
@@ -88,6 +110,8 @@ const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
               >
                 About
               </a>
+            </motion.div>
+            <motion.div variants={itemVariants}>
               <a
                 href="#experience"
                 onClick={onClose}
@@ -95,6 +119,8 @@ const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
               >
                 Experience
               </a>
+            </motion.div>
+            <motion.div variants={itemVariants}>
               <a
                 href="#skills"
                 onClick={onClose}
@@ -102,8 +128,8 @@ const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
               >
                 Skills
               </a>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </>
