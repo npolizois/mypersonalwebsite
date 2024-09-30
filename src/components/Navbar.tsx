@@ -75,7 +75,7 @@ const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
               }`}
             >
               <a
-                href="#"
+                href="#home"
                 onClick={onClose}
                 className="text-4xl sm:text-3xl md:text-5xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
               >

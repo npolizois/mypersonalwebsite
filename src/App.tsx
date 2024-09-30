@@ -10,8 +10,6 @@ import Footer from "./components/Footer";
 const App: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  
-
   const onToggleNav = () => {
     const newNavState = !isNavOpen;
     setIsNavOpen(newNavState);
@@ -29,7 +27,7 @@ const App: React.FC = () => {
 
       <main className="flex-grow">
         {/* Home Section */}
-        <section>
+        <section id="home">
           <Home isNavOpen={isNavOpen} />
         </section>
 
