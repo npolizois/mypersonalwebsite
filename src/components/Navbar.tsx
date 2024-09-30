@@ -88,7 +88,7 @@ const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
       >
         <div className="container mx-auto flex flex-row justify-between p-4 bg-transparent transition-all duration-500">
           <motion.div
-            className="flex flex-col items-start justify-center h-full px-6 md:px-12 space-y-6 z-50"
+            className="flex flex-col items-start justify-center h-full px-6 md:px-12 space-y-6 lg:space-y-8 z-50"
             variants={containerVariants}
             initial="hidden"
             animate={isContentVisible ? "visible" : "hidden"}
@@ -97,7 +97,7 @@ const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
               <a
                 href="#home"
                 onClick={onClose}
-                className="text-4xl sm:text-3xl md:text-5xl lg:text-6xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
+                className="text-4xl sm:text-3xl md:text-5xl lg:text-6xl text-white hover:text-green-500 transition-colors duration-500"
               >
                 Home
               </a>
@@ -106,7 +106,7 @@ const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
               <a
                 href="#about"
                 onClick={onClose}
-                className="text-4xl sm:text-3xl md:text-5xl lg:text-6xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
+                className="text-4xl sm:text-3xl md:text-5xl lg:text-6xl text-white hover:text-green-500 transition-colors duration-500"
               >
                 About
               </a>
@@ -115,7 +115,7 @@ const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
               <a
                 href="#experience"
                 onClick={onClose}
-                className="text-4xl sm:text-3xl md:text-5xl lg:text-6xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
+                className="text-4xl sm:text-3xl md:text-5xl lg:text-6xl text-white hover:text-green-500 transition-colors duration-500"
               >
                 Experience
               </a>
