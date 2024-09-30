@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import background from "../assets/background.webp";
+import useWindowWidth from "../hooks/useWindowWidth";
 
 interface HomeProps {
   isNavOpen: boolean;
@@ -12,15 +13,19 @@ const fadeIn = {
 };
 
 const Home: React.FC<HomeProps> = ({ isNavOpen }) => {
-  console.log("HomeProps", isNavOpen);
+  const windowWidth = useWindowWidth();
+
   return (
     <motion.div
       initial="hidden"
       animate="visible"
       variants={fadeIn}
+      style={{
+        height: windowWidth >= 768 ? `calc(100vh - 8.5rem)` : "auto",
+      }}
       className={`${
         isNavOpen ? "hidden" : ""
-      } flex flex-col md:flex-row items-center justify-between container mx-auto px-4 py-12 md:min-h-screen`}
+      } flex flex-col md:flex-row items-center justify-items-start container mx-auto px-4 py-12`}
     >
       <div className="flex flex-col items-start max-w-full xs:max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl space-y-2">
         <h1 className="text-3xl md:text-6xl font-extrabold text-light drop-shadow-lg">
