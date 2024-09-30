@@ -1,18 +1,24 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+interface SkillsProps {
+  isNavOpen: boolean;
+}
+
 const fadeIn = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 2, delay: 2 } }, // Skills start after Experience
+  visible: { opacity: 1, transition: { duration: 2, delay: 2 } },
 };
 
-const Skills: React.FC = () => {
+const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
   return (
     <motion.div
       initial="hidden"
       animate="visible"
       variants={fadeIn}
-      className="py-6 md:py-12 bg-gray-900 min-h-screen"
+      className={`${
+        isNavOpen ? "hidden" : ""
+      } py-6 md:py-12 bg-gray-900 min-h-screen`}
     >
       <div className="container mx-auto px-4 sm:px-2 md:px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">

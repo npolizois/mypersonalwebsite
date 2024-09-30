@@ -10,12 +10,10 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ onToggle }) => {
   return (
     <header className="container mx-auto flex justify-between items-center p-4 bg-transparent transition-all duration-300">
-      {/* Logo */}
       <a href="#">
         <img src={np} alt="Nikos Polyzois" className="w-24 h-26 rounded-full" />
       </a>
 
-      {/* Hamburger Icon */}
       <button
         onClick={onToggle}
         className="text-white hover:text-green-500 focus:outline-none"

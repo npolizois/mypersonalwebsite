@@ -2,25 +2,28 @@ import React from "react";
 import { motion } from "framer-motion";
 import arrowIcon from "../assets/arrow-icon.svg";
 
+interface ExperienceProps {
+  isNavOpen: boolean;
+}
+
 const fadeIn = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 2, delay: 1.5 } }, // Experience starts after About
+  visible: { opacity: 1, transition: { duration: 2, delay: 1.5 } },
 };
 
-const Experience: React.FC = () => {
+const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
   return (
     <motion.div
       initial="hidden"
       animate="visible"
       variants={fadeIn}
-      className="py-6 md:py-12 bg-gray-900"
+      className={`${isNavOpen ? "hidden" : ""} py-6 md:py-12 bg-gray-900`}
     >
       <div className="container mx-auto px-4 sm:px-2 md:px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
           Professional Experience
         </h2>
 
-        {/* Experience Items */}
         <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-6">
           <a
             href="https://www.playerdex.app/"
@@ -147,7 +150,6 @@ const Experience: React.FC = () => {
             </ul>
           </a>
 
-          {/* Resume link */}
           <div className="xs:mt-8 xl:flex xl:justify-center xl:items-center 2xl:justify-start block">
             <a
               href="/assets/CV_Nikos_Polyzois.pdf"

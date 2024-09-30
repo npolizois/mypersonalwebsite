@@ -2,26 +2,24 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faSkype, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { motion } from "framer-motion"; // Import Framer Motion for animations
+import { motion } from "framer-motion";
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 py-8">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-        {/* Copyright Text on the Left (and stacked on mobile) */}
         <div className="text-center md:text-left text-gray-400">
           <span className="hidden md:inline-block">Copyright</span> ©{" "}
           {new Date().getFullYear()} Nikos Polyzois. All rights reserved.
         </div>
 
-        {/* Social Icons on the Right (and stacked below the text on mobile) */}
         <div className="flex space-x-6 sm:space-x-8">
           <motion.a
             href="mailto:polyzois.nikos@gmail.com"
             aria-label="Email"
             className="focus:outline-none focus:ring-2 focus:ring-green-500 rounded"
-            whileHover={{ scale: 1.2 }} // Add hover scaling animation
-            whileTap={{ scale: 0.9 }} // Add a tap animation for click
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
           >
             <FontAwesomeIcon
               icon={faEnvelope}

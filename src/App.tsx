@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -7,6 +8,8 @@ import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 
 const App: React.FC = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
   useEffect(() => {
     const handleCopy = (e: ClipboardEvent) => {
       e.preventDefault();
@@ -19,32 +22,45 @@ const App: React.FC = () => {
     };
   }, []);
 
+  const onToggleNav = () => {
+    const newNavState = !isNavOpen;
+    setIsNavOpen(newNavState);
+  };
+
   return (
     <div className="bg-gray-900 text-white min-h-screen flex flex-col">
-      {/* NavBar Section */}
-      <Navbar />
+      {/* Header Section */}
+      {!isNavOpen && <Header onToggle={onToggleNav} />}
+
+      {/* Navbar Section */}
+      <Navbar isOpen={isNavOpen} onClose={onToggleNav} />
+
+      {/* Main Section */}
+
       <main className="flex-grow">
-        {/* Hero Section */}
+        {/* Home Section */}
         <section>
-          <Home />
+          <Home isNavOpen={isNavOpen} />
         </section>
 
         {/* About Section */}
         <section id="about">
-          <About />
+          <About isNavOpen={isNavOpen} />
         </section>
 
         {/* Experience Section */}
         <section id="experience">
-          <Experience />
+          <Experience isNavOpen={isNavOpen} />
         </section>
 
         {/* Skills Section */}
         <section id="skills">
-          <Skills />
+          <Skills isNavOpen={isNavOpen} />
         </section>
       </main>
-      <Footer />
+
+      {/* Footer Section */}
+      {!isNavOpen && <Footer />}
     </div>
   );
 };

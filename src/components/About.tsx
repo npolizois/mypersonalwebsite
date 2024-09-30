@@ -1,28 +1,31 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Accordion from "./Accordion"; // Adjust the path accordingly
+import Accordion from "./Accordion";
+
+interface AboutProps {
+  isNavOpen: boolean;
+}
 
 const fadeIn = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 2, delay: 1 } }, // About starts after Home
+  visible: { opacity: 1, transition: { duration: 2, delay: 1 } },
 };
 
-const About: React.FC = () => {
-  const [maxHeight, setMaxHeight] = useState(0); // Store the max height for all accordion items
+const About: React.FC<AboutProps> = ({ isNavOpen }) => {
+  const [maxHeight, setMaxHeight] = useState(0);
 
   return (
     <motion.div
       initial="hidden"
       animate="visible"
       variants={fadeIn}
-      className="py-6 md:py-12 bg-gray-900"
+      className={`${isNavOpen ? "hidden" : ""} py-6 md:py-12 bg-gray-900`}
     >
       <div className="container mx-auto px-4 sm:px-2 md:px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
           About Me
         </h2>
 
-        {/* Three-column layout for the main content */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 text-gray-300 mb-8">
           <div>
             <h3 className="text-xl md:text-2xl font-semibold text-white">
@@ -64,7 +67,6 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Single-column layout for the Accordion section */}
         <h3 className="text-lg md:text-xl font-semibold text-white mt-8 mb-2">
           In my previous roles, I also contributed as...
         </h3>
