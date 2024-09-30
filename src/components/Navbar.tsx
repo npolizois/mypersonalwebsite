@@ -97,7 +97,7 @@ const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
               <a
                 href="#home"
                 onClick={onClose}
-                className="text-4xl sm:text-3xl md:text-5xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
+                className="text-4xl sm:text-3xl md:text-5xl lg:text-6xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
               >
                 Home
               </a>
@@ -106,7 +106,7 @@ const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
               <a
                 href="#about"
                 onClick={onClose}
-                className="text-4xl sm:text-3xl md:text-5xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
+                className="text-4xl sm:text-3xl md:text-5xl lg:text-6xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
               >
                 About
               </a>
@@ -115,7 +115,7 @@ const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
               <a
                 href="#experience"
                 onClick={onClose}
-                className="text-4xl sm:text-3xl md:text-5xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
+                className="text-4xl sm:text-3xl md:text-5xl lg:text-6xl text-white hover:text-green-500 transition-colors duration-500 pb-4"
               >
                 Experience
               </a>
@@ -124,7 +124,7 @@ const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
               <a
                 href="#skills"
                 onClick={onClose}
-                className="text-4xl sm:text-3xl md:text-5xl text-white hover:text-green-500 transition-colors duration-500"
+                className="text-4xl sm:text-3xl md:text-5xl lg:text-6xl text-white hover:text-green-500 transition-colors duration-500"
               >
                 Skills
               </a>
