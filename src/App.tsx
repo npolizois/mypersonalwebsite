@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -10,6 +10,16 @@ import Footer from "./components/Footer";
 const App: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
+
   const onToggleNav = () => {
     const newNavState = !isNavOpen;
     setIsNavOpen(newNavState);
@@ -18,7 +28,11 @@ const App: React.FC = () => {
   return (
     <div className="bg-gray-900 text-white min-h-screen flex flex-col">
       {/* Header Section */}
-      {!isNavOpen && <Header onToggle={onToggleNav} />}
+      {!isNavOpen && (
+        <section id="home">
+          <Header onToggle={onToggleNav} />
+        </section>
+      )}
 
       {/* Navbar Section */}
       <Navbar isOpen={isNavOpen} onClose={onToggleNav} />
@@ -27,7 +41,7 @@ const App: React.FC = () => {
 
       <main className="flex-grow">
         {/* Home Section */}
-        <section id="home">
+        <section>
           <Home isNavOpen={isNavOpen} />
         </section>
 

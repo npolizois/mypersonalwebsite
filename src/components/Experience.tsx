@@ -8,7 +8,7 @@ interface ExperienceProps {
 
 const fadeIn = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 2, delay: 1.5 } },
+  visible: { opacity: 1, transition: { duration: 1, delay: 1.4 } },
 };
 
 const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {

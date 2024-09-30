@@ -8,7 +8,7 @@ interface HomeProps {
 
 const fadeIn = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 1, delay: 0.5 } },
+  visible: { opacity: 1, transition: { duration: 1, delay: 0.8 } },
 };
 
 const Home: React.FC<HomeProps> = ({ isNavOpen }) => {
