@@ -11,13 +11,7 @@ const Header: React.FC<HeaderProps> = ({ onToggle }) => {
   return (
     <header className="container mx-auto flex justify-between items-center p-4 bg-transparent transition-all duration-300">
       <a href="#home">
-        <img
-          src={logo}
-          alt="Nikos Polyzois logo"
-          className="rounded-full"
-          width="96"
-          height="101"
-        />
+        <img src={logo} alt="Nikos Polyzois logo" className="rounded-full" loading="lazy"/>
       </a>
 
       <button
