@@ -42,14 +42,14 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
               </span>
             </h3>
             <p className="text-gray-400">PlayerDex · Full-time</p>
-            <p className="text-gray-400">
+            <p className="text-gray-400 mb-4">
               Dec 2023 - Present · Filothei, Attiki, Greece · Remote
             </p>
+            <p className="mb-4">
+              Lead development and maintenance of client-side and server-side
+              applications in a start-up environment.
+            </p>
             <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
-              <p className="mb-4">
-                Lead development and maintenance of client-side and server-side
-                applications in a start-up environment.
-              </p>
               <li>Front-end development using React.js & Ionic React.</li>
               <li>
                 Back-end development with Node.js, Express.js (GraphQL APIs) &
@@ -85,16 +85,16 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
               </span>
             </h3>
             <p className="text-gray-400">VASS · Full-time</p>
-            <p className="text-gray-400">
+            <p className="text-gray-400 mb-4">
               Aug 2021 - Dec 2023 · Gerakas, Attiki, Greece · Remote
             </p>
+            <p className="mb-4">
+              Developed projects for the European Commission, CPVO, and OPAP as
+              Senior Application Developer (SAD) and Technical Coordinator
+              (TeCo). Scrum Master responsibilities in case of absence of
+              Project Manager (PM).
+            </p>
             <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
-              <p className="mb-4">
-                Developed projects for the European Commission, CPVO, and OPAP
-                as Senior Application Developer (SAD) and Technical Coordinator
-                (TeCo). Scrum Master responsibilities in case of absence of
-                Project Manager (PM).
-              </p>
               <li>Front-end development using React.js & Angular.</li>
               <li>
                 Back-end development using Node.js, Express.js (REST APIs) &
