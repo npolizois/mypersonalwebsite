@@ -52,7 +52,7 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
               </p>
               <li>Front-end development using React.js & Ionic React.</li>
               <li>
-                Back-end development with Node.js, Express.js (GraphQL APIs) and
+                Back-end development with Node.js, Express.js (GraphQL APIs) &
                 database management (MongoDB).
               </li>
               <li>
@@ -97,7 +97,7 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
               </p>
               <li>Front-end development using React.js & Angular.</li>
               <li>
-                Back-end development using Node.js, Express.js (REST APIs) and
+                Back-end development using Node.js, Express.js (REST APIs) &
                 database management (MySQL, Oracle).
               </li>
               <li>E2E testing using Cypress, Unit testing with Angular CLI.</li>
@@ -136,18 +136,15 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
                 Built a custom ERP system from scratch with TDD coding
                 standards.
               </li>
-              <li>
-                Developed on Node.js (back-end) and React.js with Material UI
-                (front-end).
-              </li>
+              <li>Developed on Node.js (back-end) and React.js (front-end).</li>
               <li>Database administration with MySQL and MariaDB.</li>
               <li>
                 Implemented unit and integration testing with Mocha, Sinon,
                 Chai.
               </li>
               <li>
-                Developed websites (WordPress) and e-commerce systems (OpenCart)
-                integrated with the ERP.
+                Developed presentation websites (WordPress) and e-commerce
+                systems (OpenCart) integrated with the ERP.
               </li>
             </ul>
           </a>
