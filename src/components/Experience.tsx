@@ -17,7 +17,7 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
       initial="hidden"
       animate="visible"
       variants={fadeIn}
-      className={`${isNavOpen ? "hidden" : ""} py-6 md:py-12 bg-gray-900`}
+      className={`${isNavOpen ? "hidden" : ""} py-6 md:py-12 bg-gray-900 md:min-h-screen`}
     >
       <div className="container mx-auto px-4 sm:px-2 md:px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">

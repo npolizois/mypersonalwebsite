@@ -19,7 +19,7 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
       variants={fadeIn}
       className={`${
         isNavOpen ? "hidden" : ""
-      } flex flex-col md:flex-row items-center justify-between container mx-auto px-4 py-12 md:min-h-screen lg:min-h-fit`}
+      } flex flex-col md:flex-row items-center justify-between container mx-auto px-4 py-12 md:min-h-screen`}
     >
       <div className="flex-shrink-0">
         <div className="relative">
