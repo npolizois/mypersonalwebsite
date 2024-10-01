@@ -20,6 +20,15 @@ export default defineConfig({
           if (id.includes("node_modules")) {
             return "vendor";
           }
+
+          if (id.includes("src/components/")) {
+            const segments = id.split("/");
+            const fileName = segments.pop();
+            if (fileName) {
+              const name = fileName.split(".")[0];
+              return `chunk-${name}`;
+            }
+          }
         },
       },
     },
