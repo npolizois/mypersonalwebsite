@@ -1,14 +1,11 @@
-import React, { useEffect, useState, Suspense, lazy } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Skills from "./components/Skills";
 import Footer from "./components/Footer";
-import Spinner from "./components/Spinner";
-
-// Lazy load your components
-const Home = lazy(() => import("./components/Home"));
-const About = lazy(() => import("./components/About"));
-const Experience = lazy(() => import("./components/Experience"));
-const Skills = lazy(() => import("./components/Skills"));
 
 const App: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -41,29 +38,27 @@ const App: React.FC = () => {
       <Navbar isOpen={isNavOpen} onClose={onToggleNav} />
 
       {/* Main Section */}
+
       <main className="flex-grow">
-        {/* Lazy loading sections with Spinner fallback */}
-        <Suspense fallback={<Spinner />}>
-          {/* Home Section */}
-          <section>
-            <Home isNavOpen={isNavOpen} />
-          </section>
+        {/* Home Section */}
+        <section>
+          <Home isNavOpen={isNavOpen} />
+        </section>
 
-          {/* About Section */}
-          <section id="about">
-            <About isNavOpen={isNavOpen} />
-          </section>
+        {/* About Section */}
+        <section id="about">
+          <About isNavOpen={isNavOpen} />
+        </section>
 
-          {/* Experience Section */}
-          <section id="experience">
-            <Experience isNavOpen={isNavOpen} />
-          </section>
+        {/* Experience Section */}
+        <section id="experience">
+          <Experience isNavOpen={isNavOpen} />
+        </section>
 
-          {/* Skills Section */}
-          <section id="skills">
-            <Skills isNavOpen={isNavOpen} />
-          </section>
-        </Suspense>
+        {/* Skills Section */}
+        <section id="skills">
+          <Skills isNavOpen={isNavOpen} />
+        </section>
       </main>
 
       {/* Footer Section */}
