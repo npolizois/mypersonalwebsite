@@ -45,7 +45,7 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
             <p className="text-gray-400 mb-4">
               Dec 2023 - Present · Filothei, Attiki, Greece · Remote
             </p>
-            <p className="mb-4">
+            <p className="text-gray-300 mb-4">
               Lead development and maintenance of client-side and server-side
               applications in a start-up environment.
             </p>
@@ -88,7 +88,7 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
             <p className="text-gray-400 mb-4">
               Aug 2021 - Dec 2023 · Gerakas, Attiki, Greece · Remote
             </p>
-            <p className="mb-4">
+            <p className="text-gray-300 mb-4">
               Developed projects for the European Commission, CPVO, and OPAP as
               Senior Application Developer (SAD) and Technical Coordinator
               (TeCo). Scrum Master responsibilities in case of absence of
@@ -131,7 +131,7 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
             <p className="text-gray-400">
               Sep 2017 - Aug 2021 · Metamorfosi, Attiki, Greece · Hybrid
             </p>
-            <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
+            <ul className="list-disc list-inside mt-4 text-gray-300 space-y-2">
               <li>
                 Built a custom ERP system from scratch with TDD coding
                 standards.
