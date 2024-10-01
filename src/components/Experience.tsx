@@ -17,7 +17,9 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
       initial="hidden"
       animate="visible"
       variants={fadeIn}
-      className={`${isNavOpen ? "hidden" : ""} py-6 md:py-12 bg-gray-900 md:min-h-screen`}
+      className={`${
+        isNavOpen ? "hidden" : ""
+      } py-6 md:py-12 bg-gray-900 md:min-h-screen`}
     >
       <div className="container mx-auto px-4 sm:px-2 md:px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
@@ -53,16 +55,16 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
             <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
               <li>Front-end development using React.js & Ionic React.</li>
               <li>
-                Back-end development with Node.js, Express.js (GraphQL APIs) &
+                Back-end development using Node.js, Express.js (GraphQL APIs) &
                 database management (MongoDB).
-              </li>
-              <li>
-                Cloud management on AWS (EC2, S3, Route 53, CloudFront,
-                Certificate Manager).
               </li>
               <li>
                 Version control via GitHub; Agile methodologies using Atlassian
                 tools (JIRA, Confluence).
+              </li>
+              <li>
+                Cloud management on AWS (EC2, S3, Route 53, CloudFront,
+                Certificate Manager).
               </li>
               <li>DevOps: Automated deployments with PM2, Certbot.</li>
               <li>Code reviews and pair programming for quality assurance.</li>
@@ -91,10 +93,10 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
               Aug 2021 - Dec 2023 · Gerakas, Attiki, Greece · Remote
             </p>
             <p className="text-gray-300 mb-4">
-              Developed projects for the European Commission, CPVO, and OPAP as
-              Senior Application Developer (SAD) and Technical Coordinator
-              (TeCo). Scrum Master responsibilities in case of absence of
-              Project Manager (PM).
+              Developed digital transformation projects for the European
+              Commission, CPVO and OPAP as Senior Application Developer (SAD)
+              and Technical Coordinator (TeCo); Scrum Master responsibilities in
+              case of absence of Project Manager (PM).
             </p>
             <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
               <li>Front-end development using React.js & Angular.</li>
@@ -104,8 +106,8 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
               </li>
               <li>E2E testing using Cypress, Unit testing with Angular CLI.</li>
               <li>
-                Agile methodologies with Atlassian tools (JIRA, Confluence);
-                version control using GitLab & BitBucket.
+                Version control using GitLab & BitBucket; Agile methodologies
+                with Atlassian tools (JIRA, Confluence);
               </li>
               <li>Code reviews and pair programming for quality assurance.</li>
             </ul>
@@ -143,11 +145,11 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
               <li>Database administration with MySQL and MariaDB.</li>
               <li>
                 Implemented unit and integration testing with Mocha, Sinon,
-                Chai.
+                Chai & PHPUnit.
               </li>
               <li>
                 Developed presentation websites (WordPress) and e-commerce
-                systems (OpenCart) integrated with the ERP.
+                system (OpenCart) integrated with the ERP.
               </li>
             </ul>
           </a>
