@@ -13,7 +13,7 @@ const Header: React.FC<HeaderProps> = ({ onToggle }) => {
       <a href="#home">
         <img
           src={logo}
-          alt="Nikos Polyzois logo"
+          alt="logo image"
           className="rounded-full"
           width="96"
           height="101"
