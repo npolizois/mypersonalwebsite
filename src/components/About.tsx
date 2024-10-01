@@ -32,7 +32,7 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
         </div>
       </div>
       <div className="md:ml-8 mt-12 md:mt-0 flex flex-col items-start max-w-full xs:max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl space-y-2">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8 lg:mb-4 xl:mb-8">
           About Me
         </h2>
         <p className="md:text-xs lg:text-sm xl:text-base text-gray-300">
