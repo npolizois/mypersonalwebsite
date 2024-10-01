@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import createHtmlMinifier from "vite-plugin-html-minifier";
+import compression from "vite-plugin-compression";
 
 export default defineConfig({
   plugins: [
@@ -8,6 +9,10 @@ export default defineConfig({
     createHtmlMinifier({
       minify: true,
       filter: /\.html$/,
+    }),
+    compression({
+      algorithm: "gzip",
+      threshold: 10240,
     }),
   ],
   build: {
