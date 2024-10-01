@@ -1,0 +1,5 @@
+User-agent: *   # Applies to all web crawlers
+# Disallow: /private/  # Prevent crawlers from accessing the /private/ directory
+# Disallow: /temp/     # Prevent crawlers from accessing the /temp/ directory
+Allow: /public/      # Allow crawlers to access the /public/ directory
+Sitemap: https://nikospolyzois.dev/sitemap.xml  # Location of your sitemap
