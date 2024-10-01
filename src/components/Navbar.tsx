@@ -74,8 +74,14 @@ const Navbar: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
             className={`text-white z-50 focus:outline-none hover:text-green-500 transition-opacity duration-500 ${
               isXVisible ? "opacity-100" : "opacity-0"
             }`}
+            aria-label="Close"
+            title="Close"
           >
-            <FontAwesomeIcon icon={faTimes} className="w-8 h-8" />
+            <FontAwesomeIcon
+              icon={faTimes}
+              className="w-8 h-8"
+              aria-hidden="true"
+            />
           </button>
         </div>
       )}

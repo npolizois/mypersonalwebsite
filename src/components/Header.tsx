@@ -21,7 +21,8 @@ const Header: React.FC<HeaderProps> = ({ onToggle }) => {
       <button
         onClick={onToggle}
         className="text-white hover:text-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
-        aria-label="Toggle Navigation" // Descriptive label for screen readers
+        aria-label="Toggle Navigation"
+        title="Toggle Navigation"
       >
         <FontAwesomeIcon icon={faBars} className="w-8 h-8" />
       </button>

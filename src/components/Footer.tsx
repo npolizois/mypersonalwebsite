@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 py-8">
+    <footer className="bg-gray-900 py-8" role="contentinfo">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
         <div className="text-center md:text-left text-gray-400">
           <span className="hidden md:inline-block">Copyright</span> ©{" "}
@@ -24,7 +24,9 @@ const Footer: React.FC = () => {
             <FontAwesomeIcon
               icon={faEnvelope}
               className="h-8 w-8 text-secondary hover:text-green-500 transition duration-300"
+              aria-hidden="true"
             />
+            <span className="sr-only">Email</span>
           </motion.a>
 
           <motion.a
@@ -37,7 +39,9 @@ const Footer: React.FC = () => {
             <FontAwesomeIcon
               icon={faPhone}
               className="h-8 w-8 text-secondary hover:text-green-500 transition duration-300"
+              aria-hidden="true"
             />
+            <span className="sr-only">Phone</span>
           </motion.a>
 
           <motion.a
@@ -50,7 +54,9 @@ const Footer: React.FC = () => {
             <FontAwesomeIcon
               icon={faSkype}
               className="h-8 w-8 text-secondary hover:text-green-500 transition duration-300"
+              aria-hidden="true"
             />
+            <span className="sr-only">Skype</span>
           </motion.a>
 
           <motion.a
@@ -65,7 +71,9 @@ const Footer: React.FC = () => {
             <FontAwesomeIcon
               icon={faLinkedinIn}
               className="h-8 w-8 text-secondary hover:text-green-500 transition duration-300"
+              aria-hidden="true"
             />
+            <span className="sr-only">LinkedIn</span>
           </motion.a>
         </div>
       </div>
