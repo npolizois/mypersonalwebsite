@@ -1,1 +1,0 @@
-import{j as e}from"./vendor-YUnJhFx5.js";const s=()=>e.jsx("div",{className:"flex justify-center items-center h-full",children:e.jsx("div",{className:"animate-spin h-10 w-10 border-4 border-t-4 border-gray-200 rounded-full border-t-green-500"})});export{s as S};
