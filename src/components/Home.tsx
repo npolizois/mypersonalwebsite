@@ -41,7 +41,7 @@ const Home: React.FC<HomeProps> = ({ isNavOpen }) => {
       <div className="flex-shrink-0 md:ml-8">
         <img
           src={background}
-          alt="Nikos Polyzois"
+          alt="home image"
           className="rounded shadow-lg m-full xs:max-w-md md:max-w-md lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl"
           width="1024"
           height="585"
