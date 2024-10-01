@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({ onToggle }) => {
           alt="logo image"
           className="rounded-full"
           width="96"
-          height="101"
+          height="100"
         />
       </a>
 
