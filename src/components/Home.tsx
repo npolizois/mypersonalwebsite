@@ -43,6 +43,7 @@ const Home: React.FC<HomeProps> = ({ isNavOpen }) => {
           src={background}
           alt="Nikos Polyzois"
           className="rounded shadow-lg m-full xs:max-w-md md:max-w-md lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl"
+          loading="lazy"
         />
       </div>
     </motion.div>

@@ -38,6 +38,7 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
                   src={arrowIcon}
                   alt="arrow"
                   className="h-4 w-4 ml-2 transition-transform duration-300 transform group-hover:-translate-y-1 group-hover:translate-x-1"
+                  loading="lazy"
                 />
               </span>
             </h3>
@@ -81,6 +82,7 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
                   src={arrowIcon}
                   alt="arrow"
                   className="h-4 w-4 ml-2 transition-transform duration-300 transform group-hover:-translate-y-1 group-hover:translate-x-1"
+                  loading="lazy"
                 />
               </span>
             </h3>
@@ -122,6 +124,7 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
                   src={arrowIcon}
                   alt="arrow"
                   className="h-4 w-4 ml-2 transition-transform duration-300 transform group-hover:-translate-y-1 group-hover:translate-x-1"
+                  loading="lazy"
                 />
               </span>
             </h3>
