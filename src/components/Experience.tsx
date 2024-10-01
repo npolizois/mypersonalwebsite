@@ -52,7 +52,8 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
               </p>
               <li>Front-end development using React.js & Ionic React.</li>
               <li>
-                Back-end development with Node.js, Express.js, and GraphQL APIs.
+                Back-end development with Node.js, Express.js (GraphQL APIs) and
+                database management (MongoDB).
               </li>
               <li>
                 Cloud management on AWS (EC2, S3, Route 53, CloudFront,
@@ -63,6 +64,7 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
                 tools (JIRA, Confluence).
               </li>
               <li>DevOps: Automated deployments with PM2, Certbot.</li>
+              <li>Code reviews and pair programming for quality assurance.</li>
             </ul>
           </a>
 
@@ -90,20 +92,20 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
               <p className="mb-4">
                 Developed projects for the European Commission, CPVO, and OPAP
                 as Senior Application Developer (SAD) and Technical Coordinator
-                (TeCo).
+                (TeCo). Scrum Master responsibilities in case of absence of
+                Project Manager (PM).
               </p>
+              <li>Front-end development using React.js & Angular.</li>
               <li>
-                Front-end development using React.js & Typescript, Angular.
-              </li>
-              <li>
-                Back-end development using Node.js (REST APIs) and database
-                management (MySQL, Oracle).
+                Back-end development using Node.js, Express.js (REST APIs) and
+                database management (MySQL, Oracle).
               </li>
               <li>E2E testing using Cypress, Unit testing with Angular CLI.</li>
               <li>
                 Agile methodologies with Atlassian tools (JIRA, Confluence);
-                version control using GitLab.
+                version control using GitLab & BitBucket.
               </li>
+              <li>Code reviews and pair programming for quality assurance.</li>
             </ul>
           </a>
 
