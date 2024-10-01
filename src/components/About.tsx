@@ -39,10 +39,10 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
           I am Nikos Polyzois, a Full Stack Web Developer with a diverse skill
           set encompassing web application development, custom ERP systems, and
           CMS-driven solutions. Bachelor of Science in Computer Engineering from
-          the Technological Educational Institure (TEI) of Athens and a Diploma
+          the Technological Educational Institute (TEI) of Athens and a Diploma
           in Web Design & Development from the Future Business School. With a
-          strong foundation in both front-end and back-end technologies, I excel
-          in Typescript, React.js, Node.js, and Angular. I am passionate about
+          strong foundation in front-end and back-end technologies, I excel in
+          Typescript, React.js, Node.js, and Angular. I am passionate about
           creating seamless digital experiences, combining my technical
           proficiency with a keen eye for design to enhance functionality and
           user satisfaction.
@@ -58,9 +58,9 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
         </p>
         <p className="md:hidden lg:block lg:text-sm xl:text-base text-gray-300">
           In my previous roles as an E-commerce Administrator and IT Specialist,
-          I focused on site management, SEO strategies, and IT support for
+          I focused on on-site management, SEO strategies, and IT support for
           multinational companies. I believe my ability to harmonize technical
-          and creative elements positions me as a valuable asset to any
+          and creative elements position me as a valuable asset to any
           development team, ready to tackle complex challenges and drive
           impactful solutions.
         </p>
