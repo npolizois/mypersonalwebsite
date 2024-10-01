@@ -43,7 +43,7 @@ const Experience: React.FC<ExperienceProps> = ({ isNavOpen }) => {
             </h3>
             <p className="text-gray-400">PlayerDex · Full-time</p>
             <p className="text-gray-400">
-              Dec 2023 - Present · Filothei-Psychiko, Attiki, Greece · Remote
+              Dec 2023 - Present · Filothei, Attiki, Greece · Remote
             </p>
             <ul className="list-disc list-inside mt-2 text-gray-300 space-y-2">
               <p className="mb-4">
