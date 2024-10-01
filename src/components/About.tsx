@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import np from "../assets/np.jpeg";
+import np from "../assets/np.webp";
 
 interface AboutProps {
   isNavOpen: boolean;

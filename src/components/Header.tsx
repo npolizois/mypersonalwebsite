@@ -14,10 +14,9 @@ const Header: React.FC<HeaderProps> = ({ onToggle }) => {
         <img
           src={logo}
           alt="Nikos Polyzois logo"
-          className="w-24 h-26 rounded-full"
+          className="rounded-full"
           width="96"
           height="101"
-          loading="lazy"
         />
       </a>
 
