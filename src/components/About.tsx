@@ -32,6 +32,7 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
             height="500"
             loading="lazy"
           />
+          <div className="absolute inset-0 bg-blue-800 opacity-50 rounded-lg z-20"></div>
         </div>
       </div>
       <div className="md:ml-8 mt-12 md:mt-0 flex flex-col items-start max-w-full xs:max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl space-y-2">
