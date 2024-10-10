@@ -28,7 +28,7 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
             src={np}
             alt="Nikos Polyzois"
             className="relative rounded-lg shadow-lg m-full xs:max-w-md md:max-w-sm lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl z-10"
-            width="500"
+            width="406"
             height="500"
             loading="lazy"
           />
