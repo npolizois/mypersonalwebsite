@@ -219,7 +219,7 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
             variants={fadeIn}
           >
             {[
-              "Mentoring junior or mid developers and fostering collaboration",
+              "Mentoring junior / mid developers and fostering collaboration",
               "Leading Agile teams for successful project delivery",
               "Acting as Scrum Master in the absence of a Project Manager",
               "Coordinating cross-functional teams for product launches",
