@@ -39,37 +39,31 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8 md:mb-4 2xl:mb-8">
           About Me
         </h2>
-        <p className="md:text-xs lg:text-sm xl:text-base text-gray-300">
-          I am a Full Stack Web Developer with over 7 years of experience in web
-          application development, custom ERP system, and CMS-driven solutions.
-          I hold a Bachelor of Science in Computer Engineering from the
-          Technological Educational Institute (TEI) of Athens and a Diploma in
-          Web Design & Development from the Future Business School.
+        <p className="md:text-xs lg:text-base text-gray-300">
+          I am a Full Stack Web Developer with over 7 years of experience in
+          developing web applications, custom ERP system, and CMS-driven
+          solutions. I hold a Bachelor of Science in Computer Engineering from
+          the Technological Educational Institute (TEI) of Athens and a Diploma
+          in Web Design & Development from Future Business School. My expertise
+          spans front-end and back-end technologies, particularly in TypeScript,
+          React.js, Node.js, and Angular, where I focus on creating intuitive,
+          responsive digital experiences.
         </p>
-        <p className="md:text-xs lg:text-sm xl:text-base text-gray-300">
-          With expertise in both front-end and back-end technologies, I excel in
-          TypeScript, React.js, Node.js, and Angular. I am passionate about
-          creating seamless digital experiences that blend technical proficiency
-          with a keen eye for design to enhance functionality and user
-          satisfaction.
+        <p className="md:text-xs lg:text-base text-gray-300">
+          In my professional journey, I’ve led Digital Transformation projects,
+          working in both startup and corporate environments to modernize
+          processes and increase efficiency. I am well-versed in collaborative
+          development, always striving to innovate and streamline workflows. I
+          also integrate AI tools to enhance productivity.
         </p>
-        <p className="md:text-xs lg:text-sm xl:text-base text-gray-300">
-          I am committed to best practices in Test-Driven Development (TDD) and
-          version control. I thrive in collaborative environments, bringing
-          creativity and innovative problem-solving to every project. My
-          experience includes building e-commerce platforms, developing API
-          interfaces, and providing database administration while leveraging
-          advanced AI tools to streamline workflows and boost productivity.
-        </p>
-        <p className="md:hidden lg:block lg:text-sm xl:text-base text-gray-300">
-          I have successfully led Digital Transformation initiatives, helping
-          organizations modernize their processes and adopt new technologies for
-          improved efficiency and competitiveness.
-        </p>
-        <p className="md:hidden lg:block lg:text-sm xl:text-base text-gray-300">
-          I believe my ability to harmonize technical and creative elements
-          makes me a valuable asset to any development team, ready to tackle
-          complex challenges and drive impactful solutions.
+        <p className="md:text-xs lg:text-base text-gray-300">
+          As a married parent of two children and an experienced team leader, I
+          bring a balanced approach to leadership, maintaining a healthy
+          work-life balance while managing responsibilities effectively. My
+          background includes mentoring junior developers, leading teams through
+          complex technical challenges, and implementing efficient solutions in
+          fast-paced environments. I thrive in roles that blend technical and
+          creative problem-solving to drive impactful results.
         </p>
       </div>
     </motion.div>

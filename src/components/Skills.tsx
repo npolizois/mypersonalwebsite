@@ -39,12 +39,12 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
         <div className="mb-8">
           <motion.h3
             className="text-xl md:text-2xl font-semibold text-white mb-6 flex items-center"
-            whileHover="hover" // Applies hover to the entire h3
+            whileHover="hover"
           >
             <motion.span
               className="inline-block"
               variants={{
-                hover: { rotate: 360 }, // Only the icon spins when h3 is hovered
+                hover: { rotate: 360 },
               }}
               transition={{ duration: 0.8 }}
             >
@@ -53,7 +53,7 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
             <span className="ml-2">Development</span>
           </motion.h3>
           <motion.ul
-            className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8"
+            className="list-none text-gray-300 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-8"
             variants={fadeIn}
           >
             {[
@@ -72,10 +72,11 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
             ].map((skill, index) => (
               <motion.li
                 key={index}
-                className="hover:scale-105 transition-transform"
+                className="hover:scale-105 transition-transform flex"
                 variants={listItemVariants}
               >
-                {skill}
+                <span className="mr-2">•</span>
+                <span>{skill}</span>
               </motion.li>
             ))}
           </motion.ul>
@@ -98,7 +99,7 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
             <span className="ml-2">DevOps & Cloud</span>
           </motion.h3>
           <motion.ul
-            className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8"
+            className="list-none text-gray-300 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-8"
             variants={fadeIn}
           >
             {[
@@ -109,10 +110,11 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
             ].map((skill, index) => (
               <motion.li
                 key={index}
-                className="hover:scale-105 transition-transform"
+                className="hover:scale-105 transition-transform flex"
                 variants={listItemVariants}
               >
-                {skill}
+                <span className="mr-2">•</span>
+                <span>{skill}</span>
               </motion.li>
             ))}
           </motion.ul>
@@ -135,7 +137,7 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
             <span className="ml-2">Methodologies & Tools</span>
           </motion.h3>
           <motion.ul
-            className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8"
+            className="list-none text-gray-300 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-8"
             variants={fadeIn}
           >
             {[
@@ -146,10 +148,51 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
             ].map((skill, index) => (
               <motion.li
                 key={index}
-                className="hover:scale-105 transition-transform"
+                className="hover:scale-105 transition-transform flex"
                 variants={listItemVariants}
               >
-                {skill}
+                <span className="mr-2">•</span>
+                <span>{skill}</span>
+              </motion.li>
+            ))}
+          </motion.ul>
+        </div>
+
+        <div className="mb-12">
+          <motion.h3
+            className="text-xl md:text-2xl font-semibold text-white mb-6 flex items-center"
+            whileHover="hover"
+          >
+            <motion.span
+              className="inline-block"
+              variants={{
+                hover: { rotate: 360 },
+              }}
+              transition={{ duration: 0.8 }}
+            >
+              🛠️
+            </motion.span>
+            <span className="ml-2">Soft Skills</span>
+          </motion.h3>
+          <motion.ul
+            className="list-none text-gray-300 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-8"
+            variants={fadeIn}
+          >
+            {[
+              "Analytical Thinking",
+              "Organization skills",
+              "Detail-oriented",
+              "Critical Thinking",
+              "Time Management",
+              "Communication Skills",
+            ].map((skill, index) => (
+              <motion.li
+                key={index}
+                className="hover:scale-105 transition-transform flex"
+                variants={listItemVariants}
+              >
+                <span className="mr-2">•</span>
+                <span>{skill}</span>
               </motion.li>
             ))}
           </motion.ul>
@@ -169,26 +212,25 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
             >
               🛠️
             </motion.span>
-            <span className="ml-2">Soft Skills</span>
+            <span className="ml-2">Leadership & Team Management</span>
           </motion.h3>
           <motion.ul
-            className="list-disc list-inside text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8"
+            className="list-none text-gray-300 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-8"
             variants={fadeIn}
           >
             {[
-              "Analytical Thinking",
-              "Organization skills",
-              "Detail-oriented",
-              "Critical Thinking",
-              "Time Management",
-              "Communication Skills",
+              "Mentoring junior developers and fostering collaborative environments",
+              "Leading development teams in Agile environments to ensure project success",
+              "Scrum Master responsibilities in absence of Project Manager, ensuring smooth sprints",
+              "Coordinating cross-functional teams for successful project delivery and product launches",
             ].map((skill, index) => (
               <motion.li
                 key={index}
-                className="hover:scale-105 transition-transform"
+                className="hover:scale-105 transition-transform flex"
                 variants={listItemVariants}
               >
-                {skill}
+                <span className="mr-2">•</span>
+                <span>{skill}</span>
               </motion.li>
             ))}
           </motion.ul>
