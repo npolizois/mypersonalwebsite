@@ -60,7 +60,7 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
           As a married parent of two children and an experienced team leader, I
           bring a balanced approach to leadership, maintaining a healthy
           work-life balance while managing responsibilities effectively. My
-          background includes mentoring junior developers, leading teams through
+          background includes mentoring junior or mid developers, leading teams through
           complex technical challenges, and implementing efficient solutions in
           fast-paced environments. I thrive in roles that blend technical and
           creative problem-solving to drive impactful results.
