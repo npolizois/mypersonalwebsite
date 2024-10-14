@@ -36,7 +36,7 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
           Skills
         </h2>
 
-        <div className="mb-8">
+        <div className="mb-12">
           <motion.h3
             className="text-xl md:text-2xl font-semibold text-white mb-6 flex items-center"
             whileHover="hover"
