@@ -219,10 +219,10 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
             variants={fadeIn}
           >
             {[
-              "Mentoring junior developers and fostering collaborative environments",
-              "Leading development teams in Agile environments to ensure project success",
-              "Scrum Master responsibilities in absence of Project Manager, ensuring smooth sprints",
-              "Coordinating cross-functional teams for successful project delivery and product launches",
+              "Mentoring junior developers and fostering collaboration",
+              "Leading Agile teams for successful project delivery",
+              "Acting as Scrum Master in the absence of a Project Manager",
+              "Coordinating cross-functional teams for product launches",
             ].map((skill, index) => (
               <motion.li
                 key={index}
