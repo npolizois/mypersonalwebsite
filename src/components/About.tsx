@@ -50,11 +50,11 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
           responsive digital experiences.
         </p>
         <p className="md:text-xs lg:text-base text-gray-300">
-          In my professional journey, I’ve led Digital Transformation projects,
-          working in both startup and corporate environments to modernize
-          processes and increase efficiency. I am well-versed in collaborative
-          development, always striving to innovate and streamline workflows. I
-          also integrate AI tools to enhance productivity.
+          In my professional journey, I have ve led Digital Transformation
+          projects, working in both startup and corporate environments to
+          modernize processes and increase efficiency. I am well-versed in
+          collaborative development, always striving to innovate and streamline
+          workflows. I also integrate AI tools to enhance productivity.
         </p>
         <p className="md:text-xs lg:text-base text-gray-300">
           As a married parent of two children and an experienced team leader, I
