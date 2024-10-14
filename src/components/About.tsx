@@ -41,13 +41,13 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
         </h2>
         <p className="md:text-xs lg:text-base text-gray-300">
           I am a Full Stack Web Developer with over 7 years of experience in
-          developing web applications, custom ERP system, and CMS-driven
-          solutions. I hold a Bachelor of Science in Computer Engineering from
-          the Technological Educational Institute (TEI) of Athens and a Diploma
-          in Web Design & Development from Future Business School. My expertise
-          spans front-end and back-end technologies, particularly in TypeScript,
-          React.js, Node.js, and Angular, where I focus on creating intuitive,
-          responsive digital experiences.
+          developing web applications, CMS-driven solutions and a custom ERP
+          system from scratch. I hold a Bachelor of Science in Computer
+          Engineering from the Technological Educational Institute (TEI) of
+          Athens and a Diploma in Web Design & Development from Future Business
+          School. My expertise spans front-end and back-end technologies,
+          particularly in TypeScript, React.js, Node.js, and Angular, where I
+          focus on creating intuitive, responsive digital experiences.
         </p>
         <p className="md:text-xs lg:text-base text-gray-300">
           In my professional journey, I have led Digital Transformation
