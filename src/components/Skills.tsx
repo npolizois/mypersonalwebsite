@@ -144,7 +144,7 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
               "Agile Methodologies (Scrum, Kanban)",
               "Atlassian Tools (JIRA, Confluence)",
               "Integrated Development Environments (VS Code, IntelliJ)",
-              "AI Tools",
+              "AI Tools (ChatGPT, GitHub Copilot, Cursor)",
             ].map((skill, index) => (
               <motion.li
                 key={index}

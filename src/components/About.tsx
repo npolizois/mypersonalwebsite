@@ -54,16 +54,17 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
           projects, working in both startup and corporate environments to
           modernize processes and increase efficiency. I am well-versed in
           collaborative development, always striving to innovate and streamline
-          workflows. I also integrate AI tools to enhance productivity.
+          workflows. I also integrate AI tools to enhance productivity and
+          automate processes.
         </p>
         <p className="md:text-xs lg:text-base text-gray-300">
           As a married parent of two children and an experienced team leader, I
           bring a balanced approach to leadership, maintaining a healthy
           work-life balance while managing responsibilities effectively. My
-          background includes mentoring junior or mid-level developers, leading teams through
-          complex technical challenges, and implementing efficient solutions in
-          fast-paced environments. I thrive in roles that blend technical and
-          creative problem-solving to drive impactful results.
+          background includes mentoring junior or mid-level developers, leading
+          teams through complex technical challenges, and implementing efficient
+          solutions in fast-paced environments. I thrive in roles that blend
+          technical and creative problem-solving to drive impactful results.
         </p>
       </div>
     </motion.div>
