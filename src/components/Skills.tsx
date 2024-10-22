@@ -141,7 +141,7 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
             variants={fadeIn}
           >
             {[
-              "Agile Methodologies (Scrum, Kanban)",
+              "Agile (Scrum, Kanban) & Waterfall",
               "Atlassian Tools (JIRA, Confluence)",
               "IDEs (VS Code, IntelliJ, Cursor)",
               "AI Tools (ChatGPT, GitHub Copilot, Cursor AI)",
