@@ -179,12 +179,14 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
             variants={fadeIn}
           >
             {[
-              "Analytical Thinking",
-              "Organization skills",
+              "Work Ethic",
+              "Creativity",
               "Detail-oriented",
-              "Critical Thinking",
+              "Problem-solving",
               "Time Management",
-              "Communication Skills",
+              "Communication",
+              "Adaptability",
+              "Teamwork",
             ].map((skill, index) => (
               <motion.li
                 key={index}
