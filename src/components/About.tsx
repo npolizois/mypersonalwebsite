@@ -40,7 +40,7 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
           About Me
         </h2>
         <p className="md:text-xs lg:text-base text-gray-300">
-          I am a Full Stack Web Developer with over 7 years of experience in
+          I am a Full Stack Web Developer with over 7 years of experience
           developing web applications, CMS-driven solutions and a custom ERP
           system from scratch. I hold a Bachelor of Science in Computer
           Engineering from the Technological Educational Institute (TEI) of
@@ -51,7 +51,7 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
         </p>
         <p className="md:text-xs lg:text-base text-gray-300">
           In my professional journey, I have led Digital Transformation
-          projects, working in both startup and corporate environments to
+          projects, working in startup and corporate environments to
           modernize processes and increase efficiency. I am well-versed in
           collaborative development, always striving to innovate and streamline
           workflows. I also integrate AI tools to enhance productivity and
