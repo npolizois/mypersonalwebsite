@@ -55,7 +55,7 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
           modernize processes and increase efficiency. I am well-versed in
           collaborative development, always striving to innovate and streamline
           workflows. I also integrate AI tools to enhance productivity and
-          automate processes.
+          automate processes, while ensuring ethical use.
         </p>
         <p className="md:text-xs lg:text-base text-gray-300">
           As a married parent of two children and an experienced team leader, I
