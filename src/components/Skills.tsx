@@ -183,6 +183,7 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
               "GitHub Copilot",
               "Cursor AI",
               "You.com",
+              "Anthropic Claude",
               "LangChain",
             ].map((skill, index) => (
               <motion.li
