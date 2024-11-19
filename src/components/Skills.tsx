@@ -172,6 +172,45 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
             >
               🛠️
             </motion.span>
+            <span className="ml-2">AI Tools & Prompt Engineering</span>
+          </motion.h3>
+          <motion.ul
+            className="list-none text-gray-300 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-8"
+            variants={fadeIn}
+          >
+            {[
+              "OpenAI ChatGPT",
+              "GitHub Copilot",
+              "Cursor AI",
+              "You.com",
+              "LangChain",
+            ].map((skill, index) => (
+              <motion.li
+                key={index}
+                className="hover:scale-105 transition-transform flex"
+                variants={listItemVariants}
+              >
+                <span className="mr-2">•</span>
+                <span>{skill}</span>
+              </motion.li>
+            ))}
+          </motion.ul>
+        </div>
+
+        <div className="mb-12">
+          <motion.h3
+            className="text-xl md:text-2xl font-semibold text-white mb-6 flex items-center"
+            whileHover="hover"
+          >
+            <motion.span
+              className="inline-block"
+              variants={{
+                hover: { rotate: 360 },
+              }}
+              transition={{ duration: 0.8 }}
+            >
+              🛠️
+            </motion.span>
             <span className="ml-2">Soft Skills</span>
           </motion.h3>
           <motion.ul
