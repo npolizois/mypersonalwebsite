@@ -226,44 +226,7 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
               "Communication",
               "Adaptability",
               "Teamwork",
-            ].map((skill, index) => (
-              <motion.li
-                key={index}
-                className="hover:scale-105 transition-transform flex"
-                variants={listItemVariants}
-              >
-                <span className="mr-2">•</span>
-                <span>{skill}</span>
-              </motion.li>
-            ))}
-          </motion.ul>
-        </div>
-
-        <div>
-          <motion.h3
-            className="text-xl md:text-2xl font-semibold text-white mb-6 flex items-center"
-            whileHover="hover"
-          >
-            <motion.span
-              className="inline-block"
-              variants={{
-                hover: { rotate: 360 },
-              }}
-              transition={{ duration: 0.8 }}
-            >
-              🛠️
-            </motion.span>
-            <span className="ml-2">Leadership & Team Management</span>
-          </motion.h3>
-          <motion.ul
-            className="list-none text-gray-300 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-8"
-            variants={fadeIn}
-          >
-            {[
-              "Mentoring junior / mid-level devs and fostering collaboration",
-              "Leading Agile teams for successful project delivery",
-              "Acting as Scrum Master in the absence of a Project Manager",
-              "Coordinating cross-functional teams for product launches",
+              "Leadership / Team Management",
             ].map((skill, index) => (
               <motion.li
                 key={index}
