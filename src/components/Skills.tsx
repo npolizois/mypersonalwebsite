@@ -227,7 +227,8 @@ const Skills: React.FC<SkillsProps> = ({ isNavOpen }) => {
               "Adaptability",
               "Teamwork",
               "Leadership / Team Management",
-              "Mindfulness"
+              "Mindfulness",
+              "Ethical Intelligence"
             ].map((skill, index) => (
               <motion.li
                 key={index}
