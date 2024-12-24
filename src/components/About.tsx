@@ -40,7 +40,7 @@ const About: React.FC<AboutProps> = ({ isNavOpen }) => {
           About Me
         </h2>
         <p className="md:text-xs lg:text-base text-gray-300">
-          I am a Full Stack Web Developer with over 7 years of experience
+          I am a Senior Full Stack Web Developer with over 7 years of experience
           developing web applications, CMS-driven solutions and a custom ERP
           system from scratch. I hold a Bachelor of Science in Computer
           Engineering from the Technological Educational Institute (TEI) of
